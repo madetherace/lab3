@@ -1,0 +1,719 @@
+2025-04-23 14:08:48.063 [main] INFO  com.example.triangle.main.Main - Triangle application starting...
+2025-04-23 14:08:48.368 [main] INFO  com.example.triangle.reader.TriangleFileReader - Attempting to read file: data/triangles.txt
+2025-04-23 14:08:48.581 [main] INFO  com.example.triangle.reader.TriangleFileReader - Successfully read 12 lines from file: data/triangles.txt
+2025-04-23 14:08:48.582 [main] INFO  com.example.triangle.main.Main - Read 12 lines from the file.
+2025-04-23 14:08:48.582 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Parsing line: '0.0 0.0   5.0 0.0   2.5 4.33   # Equilateral (approx)'
+2025-04-23 14:08:48.583 [main] ERROR com.example.triangle.parser.TriangleStringParser - Invalid number of coordinates in line: '0.0 0.0   5.0 0.0   2.5 4.33   # Equilateral (approx)'. Expected 6, found 9.
+2025-04-23 14:08:48.586 [main] ERROR com.example.triangle.main.Main - Skipping line due to error: '0.0 0.0   5.0 0.0   2.5 4.33   # Equilateral (approx)'. Reason: Invalid number of coordinates in line: 0.0 0.0   5.0 0.0   2.5 4.33   # Equilateral (approx). Expected 6.
+2025-04-23 14:08:48.586 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Parsing line: '1 1 6 1 1 6                  # Isosceles'
+2025-04-23 14:08:48.586 [main] ERROR com.example.triangle.parser.TriangleStringParser - Invalid number of coordinates in line: '1 1 6 1 1 6                  # Isosceles'. Expected 6, found 8.
+2025-04-23 14:08:48.586 [main] ERROR com.example.triangle.main.Main - Skipping line due to error: '1 1 6 1 1 6                  # Isosceles'. Reason: Invalid number of coordinates in line: 1 1 6 1 1 6                  # Isosceles. Expected 6.
+2025-04-23 14:08:48.587 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Parsing line: '0 0 3 0 0 4                  # Right-Angled'
+2025-04-23 14:08:48.587 [main] ERROR com.example.triangle.parser.TriangleStringParser - Invalid number of coordinates in line: '0 0 3 0 0 4                  # Right-Angled'. Expected 6, found 8.
+2025-04-23 14:08:48.587 [main] ERROR com.example.triangle.main.Main - Skipping line due to error: '0 0 3 0 0 4                  # Right-Angled'. Reason: Invalid number of coordinates in line: 0 0 3 0 0 4                  # Right-Angled. Expected 6.
+2025-04-23 14:08:48.587 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Parsing line: '1 1 2 3 4 1                  # Scalene'
+2025-04-23 14:08:48.587 [main] ERROR com.example.triangle.parser.TriangleStringParser - Invalid number of coordinates in line: '1 1 2 3 4 1                  # Scalene'. Expected 6, found 8.
+2025-04-23 14:08:48.588 [main] ERROR com.example.triangle.main.Main - Skipping line due to error: '1 1 2 3 4 1                  # Scalene'. Reason: Invalid number of coordinates in line: 1 1 2 3 4 1                  # Scalene. Expected 6.
+2025-04-23 14:08:48.588 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Parsing line: '0 0 1 1 2 2                  # Invalid - Collinear points'
+2025-04-23 14:08:48.588 [main] ERROR com.example.triangle.parser.TriangleStringParser - Invalid number of coordinates in line: '0 0 1 1 2 2                  # Invalid - Collinear points'. Expected 6, found 11.
+2025-04-23 14:08:48.588 [main] ERROR com.example.triangle.main.Main - Skipping line due to error: '0 0 1 1 2 2                  # Invalid - Collinear points'. Reason: Invalid number of coordinates in line: 0 0 1 1 2 2                  # Invalid - Collinear points. Expected 6.
+2025-04-23 14:08:48.588 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Parsing line: '10 10 20 20 30 30            # Invalid - Collinear points'
+2025-04-23 14:08:48.589 [main] ERROR com.example.triangle.parser.TriangleStringParser - Invalid number of coordinates in line: '10 10 20 20 30 30            # Invalid - Collinear points'. Expected 6, found 11.
+2025-04-23 14:08:48.589 [main] ERROR com.example.triangle.main.Main - Skipping line due to error: '10 10 20 20 30 30            # Invalid - Collinear points'. Reason: Invalid number of coordinates in line: 10 10 20 20 30 30            # Invalid - Collinear points. Expected 6.
+2025-04-23 14:08:48.589 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Parsing line: '5 5 15 5 10 13.66            # Equilateral (approx)'
+2025-04-23 14:08:48.590 [main] ERROR com.example.triangle.parser.TriangleStringParser - Invalid number of coordinates in line: '5 5 15 5 10 13.66            # Equilateral (approx)'. Expected 6, found 9.
+2025-04-23 14:08:48.590 [main] ERROR com.example.triangle.main.Main - Skipping line due to error: '5 5 15 5 10 13.66            # Equilateral (approx)'. Reason: Invalid number of coordinates in line: 5 5 15 5 10 13.66            # Equilateral (approx). Expected 6.
+2025-04-23 14:08:48.590 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Parsing line: '0 0 4 0 0 3                  # Right-Angled (same as above but different order)'
+2025-04-23 14:08:48.591 [main] ERROR com.example.triangle.parser.TriangleStringParser - Invalid number of coordinates in line: '0 0 4 0 0 3                  # Right-Angled (same as above but different order)'. Expected 6, found 14.
+2025-04-23 14:08:48.591 [main] ERROR com.example.triangle.main.Main - Skipping line due to error: '0 0 4 0 0 3                  # Right-Angled (same as above but different order)'. Reason: Invalid number of coordinates in line: 0 0 4 0 0 3                  # Right-Angled (same as above but different order). Expected 6.
+2025-04-23 14:08:48.591 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Parsing line: '-1 -1 1 -1 0 0.732           # Isosceles'
+2025-04-23 14:08:48.591 [main] ERROR com.example.triangle.parser.TriangleStringParser - Invalid number of coordinates in line: '-1 -1 1 -1 0 0.732           # Isosceles'. Expected 6, found 8.
+2025-04-23 14:08:48.591 [main] ERROR com.example.triangle.main.Main - Skipping line due to error: '-1 -1 1 -1 0 0.732           # Isosceles'. Reason: Invalid number of coordinates in line: -1 -1 1 -1 0 0.732           # Isosceles. Expected 6.
+2025-04-23 14:08:48.592 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Parsing line: '-2 5 8 1 3 -6                # Scalene'
+2025-04-23 14:08:48.592 [main] ERROR com.example.triangle.parser.TriangleStringParser - Invalid number of coordinates in line: '-2 5 8 1 3 -6                # Scalene'. Expected 6, found 8.
+2025-04-23 14:08:48.592 [main] ERROR com.example.triangle.main.Main - Skipping line due to error: '-2 5 8 1 3 -6                # Scalene'. Reason: Invalid number of coordinates in line: -2 5 8 1 3 -6                # Scalene. Expected 6.
+2025-04-23 14:08:48.592 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Parsing line: 'invalid data here            # Invalid - Non-numeric'
+2025-04-23 14:08:48.592 [main] ERROR com.example.triangle.parser.TriangleStringParser - Invalid number of coordinates in line: 'invalid data here            # Invalid - Non-numeric'. Expected 6, found 7.
+2025-04-23 14:08:48.593 [main] ERROR com.example.triangle.main.Main - Skipping line due to error: 'invalid data here            # Invalid - Non-numeric'. Reason: Invalid number of coordinates in line: invalid data here            # Invalid - Non-numeric. Expected 6.
+2025-04-23 14:08:48.593 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Parsing line: '1 2 3 4 5                    # Invalid - Wrong number of coordinates'
+2025-04-23 14:08:48.593 [main] ERROR com.example.triangle.parser.TriangleStringParser - Invalid number of coordinates in line: '1 2 3 4 5                    # Invalid - Wrong number of coordinates'. Expected 6, found 12.
+2025-04-23 14:08:48.594 [main] ERROR com.example.triangle.main.Main - Skipping line due to error: '1 2 3 4 5                    # Invalid - Wrong number of coordinates'. Reason: Invalid number of coordinates in line: 1 2 3 4 5                    # Invalid - Wrong number of coordinates. Expected 6.
+2025-04-23 14:08:48.594 [main] INFO  com.example.triangle.main.Main - Successfully created 0 triangles.
+2025-04-23 14:08:48.594 [main] WARN  com.example.triangle.main.Main - Skipped 12 lines due to errors.
+2025-04-23 14:08:48.594 [main] WARN  com.example.triangle.main.Main - No valid triangles were created from the file.
+2025-04-23 14:08:48.595 [main] INFO  com.example.triangle.main.Main - Triangle application finished.
+2025-04-23 14:11:40.943 [main] INFO  com.example.triangle.main.Main - Triangle application starting...
+2025-04-23 14:11:40.960 [main] INFO  com.example.triangle.reader.TriangleFileReader - Attempting to read file: data/triangles.txt
+2025-04-23 14:11:40.974 [main] INFO  com.example.triangle.reader.TriangleFileReader - Successfully read 12 lines from file: data/triangles.txt
+2025-04-23 14:11:40.975 [main] INFO  com.example.triangle.main.Main - Read 12 lines from the file.
+2025-04-23 14:11:40.975 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Parsing line: '0.0 0.0   5.0 0.0   2.5 4.33   # Equilateral (approx)'
+2025-04-23 14:11:40.976 [main] ERROR com.example.triangle.parser.TriangleStringParser - Invalid number of coordinates in line: '0.0 0.0   5.0 0.0   2.5 4.33   # Equilateral (approx)'. Expected 6, found 9.
+2025-04-23 14:11:40.977 [main] ERROR com.example.triangle.main.Main - Skipping line due to error: '0.0 0.0   5.0 0.0   2.5 4.33   # Equilateral (approx)'. Reason: Invalid number of coordinates in line: 0.0 0.0   5.0 0.0   2.5 4.33   # Equilateral (approx). Expected 6.
+2025-04-23 14:11:40.977 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Parsing line: '1 1 1                 # Isosceles'
+2025-04-23 14:11:40.977 [main] ERROR com.example.triangle.parser.TriangleStringParser - Invalid number of coordinates in line: '1 1 1                 # Isosceles'. Expected 6, found 5.
+2025-04-23 14:11:40.977 [main] ERROR com.example.triangle.main.Main - Skipping line due to error: '1 1 1                 # Isosceles'. Reason: Invalid number of coordinates in line: 1 1 1                 # Isosceles. Expected 6.
+2025-04-23 14:11:40.978 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Parsing line: '0 0 3 0 0 4                  # Right-Angled'
+2025-04-23 14:11:40.978 [main] ERROR com.example.triangle.parser.TriangleStringParser - Invalid number of coordinates in line: '0 0 3 0 0 4                  # Right-Angled'. Expected 6, found 8.
+2025-04-23 14:11:40.978 [main] ERROR com.example.triangle.main.Main - Skipping line due to error: '0 0 3 0 0 4                  # Right-Angled'. Reason: Invalid number of coordinates in line: 0 0 3 0 0 4                  # Right-Angled. Expected 6.
+2025-04-23 14:11:40.978 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Parsing line: '1 1 2 3 4 1                  # Scalene'
+2025-04-23 14:11:40.978 [main] ERROR com.example.triangle.parser.TriangleStringParser - Invalid number of coordinates in line: '1 1 2 3 4 1                  # Scalene'. Expected 6, found 8.
+2025-04-23 14:11:40.979 [main] ERROR com.example.triangle.main.Main - Skipping line due to error: '1 1 2 3 4 1                  # Scalene'. Reason: Invalid number of coordinates in line: 1 1 2 3 4 1                  # Scalene. Expected 6.
+2025-04-23 14:11:40.979 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Parsing line: '0 0 1 1 2 2                  # Invalid - Collinear points'
+2025-04-23 14:11:40.979 [main] ERROR com.example.triangle.parser.TriangleStringParser - Invalid number of coordinates in line: '0 0 1 1 2 2                  # Invalid - Collinear points'. Expected 6, found 11.
+2025-04-23 14:11:40.979 [main] ERROR com.example.triangle.main.Main - Skipping line due to error: '0 0 1 1 2 2                  # Invalid - Collinear points'. Reason: Invalid number of coordinates in line: 0 0 1 1 2 2                  # Invalid - Collinear points. Expected 6.
+2025-04-23 14:11:40.979 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Parsing line: '10 10 20 20 30 30            # Invalid - Collinear points'
+2025-04-23 14:11:40.980 [main] ERROR com.example.triangle.parser.TriangleStringParser - Invalid number of coordinates in line: '10 10 20 20 30 30            # Invalid - Collinear points'. Expected 6, found 11.
+2025-04-23 14:11:40.980 [main] ERROR com.example.triangle.main.Main - Skipping line due to error: '10 10 20 20 30 30            # Invalid - Collinear points'. Reason: Invalid number of coordinates in line: 10 10 20 20 30 30            # Invalid - Collinear points. Expected 6.
+2025-04-23 14:11:40.980 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Parsing line: '5 5 15 5 10 13.66            # Equilateral (approx)'
+2025-04-23 14:11:40.980 [main] ERROR com.example.triangle.parser.TriangleStringParser - Invalid number of coordinates in line: '5 5 15 5 10 13.66            # Equilateral (approx)'. Expected 6, found 9.
+2025-04-23 14:11:40.981 [main] ERROR com.example.triangle.main.Main - Skipping line due to error: '5 5 15 5 10 13.66            # Equilateral (approx)'. Reason: Invalid number of coordinates in line: 5 5 15 5 10 13.66            # Equilateral (approx). Expected 6.
+2025-04-23 14:11:40.981 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Parsing line: '0 0 4 0 0 3                  # Right-Angled (same as above but different order)'
+2025-04-23 14:11:40.981 [main] ERROR com.example.triangle.parser.TriangleStringParser - Invalid number of coordinates in line: '0 0 4 0 0 3                  # Right-Angled (same as above but different order)'. Expected 6, found 14.
+2025-04-23 14:11:40.981 [main] ERROR com.example.triangle.main.Main - Skipping line due to error: '0 0 4 0 0 3                  # Right-Angled (same as above but different order)'. Reason: Invalid number of coordinates in line: 0 0 4 0 0 3                  # Right-Angled (same as above but different order). Expected 6.
+2025-04-23 14:11:40.981 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Parsing line: '-1 -1 1 -1 0 0.732           # Isosceles'
+2025-04-23 14:11:40.981 [main] ERROR com.example.triangle.parser.TriangleStringParser - Invalid number of coordinates in line: '-1 -1 1 -1 0 0.732           # Isosceles'. Expected 6, found 8.
+2025-04-23 14:11:40.982 [main] ERROR com.example.triangle.main.Main - Skipping line due to error: '-1 -1 1 -1 0 0.732           # Isosceles'. Reason: Invalid number of coordinates in line: -1 -1 1 -1 0 0.732           # Isosceles. Expected 6.
+2025-04-23 14:11:40.982 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Parsing line: '-2 5 8 1 3 -6                # Scalene'
+2025-04-23 14:11:40.982 [main] ERROR com.example.triangle.parser.TriangleStringParser - Invalid number of coordinates in line: '-2 5 8 1 3 -6                # Scalene'. Expected 6, found 8.
+2025-04-23 14:11:40.982 [main] ERROR com.example.triangle.main.Main - Skipping line due to error: '-2 5 8 1 3 -6                # Scalene'. Reason: Invalid number of coordinates in line: -2 5 8 1 3 -6                # Scalene. Expected 6.
+2025-04-23 14:11:40.982 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Parsing line: 'invalid data here            # Invalid - Non-numeric'
+2025-04-23 14:11:40.983 [main] ERROR com.example.triangle.parser.TriangleStringParser - Invalid number of coordinates in line: 'invalid data here            # Invalid - Non-numeric'. Expected 6, found 7.
+2025-04-23 14:11:40.983 [main] ERROR com.example.triangle.main.Main - Skipping line due to error: 'invalid data here            # Invalid - Non-numeric'. Reason: Invalid number of coordinates in line: invalid data here            # Invalid - Non-numeric. Expected 6.
+2025-04-23 14:11:40.983 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Parsing line: '1 2 3 4 5                    # Invalid - Wrong number of coordinates'
+2025-04-23 14:11:40.983 [main] ERROR com.example.triangle.parser.TriangleStringParser - Invalid number of coordinates in line: '1 2 3 4 5                    # Invalid - Wrong number of coordinates'. Expected 6, found 12.
+2025-04-23 14:11:40.984 [main] ERROR com.example.triangle.main.Main - Skipping line due to error: '1 2 3 4 5                    # Invalid - Wrong number of coordinates'. Reason: Invalid number of coordinates in line: 1 2 3 4 5                    # Invalid - Wrong number of coordinates. Expected 6.
+2025-04-23 14:11:40.984 [main] INFO  com.example.triangle.main.Main - Successfully created 0 triangles.
+2025-04-23 14:11:40.984 [main] WARN  com.example.triangle.main.Main - Skipped 12 lines due to errors.
+2025-04-23 14:11:40.984 [main] WARN  com.example.triangle.main.Main - No valid triangles were created from the file.
+2025-04-23 14:11:40.985 [main] INFO  com.example.triangle.main.Main - Triangle application finished.
+2025-04-23 14:12:37.837 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 1: 6.0
+2025-04-23 14:12:37.845 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 2: 15.588450000000002
+2025-04-23 14:12:37.849 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 3: 0.0
+2025-04-23 14:12:37.863 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 1: 12.0
+2025-04-23 14:12:37.865 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 2: 17.999995803749268
+2025-04-23 14:13:54.386 [main] INFO  com.example.triangle.main.Main - Triangle application starting...
+2025-04-23 14:13:54.429 [main] INFO  com.example.triangle.reader.TriangleFileReader - Attempting to read file: data/triangles.txt
+2025-04-23 14:13:54.433 [main] INFO  com.example.triangle.reader.TriangleFileReader - Successfully read 12 lines from file: data/triangles.txt
+2025-04-23 14:13:54.434 [main] INFO  com.example.triangle.main.Main - Read 12 lines from the file.
+2025-04-23 14:13:54.434 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Parsing line: '0.0 0.0   5.0 0.0   2.5 4.33   # Equilateral (approx)'
+2025-04-23 14:13:54.434 [main] ERROR com.example.triangle.parser.TriangleStringParser - Invalid number of coordinates in line: '0.0 0.0   5.0 0.0   2.5 4.33   # Equilateral (approx)'. Expected 6, found 9.
+2025-04-23 14:13:54.435 [main] ERROR com.example.triangle.main.Main - Skipping line due to error: '0.0 0.0   5.0 0.0   2.5 4.33   # Equilateral (approx)'. Reason: Invalid number of coordinates in line: 0.0 0.0   5.0 0.0   2.5 4.33   # Equilateral (approx). Expected 6.
+2025-04-23 14:13:54.435 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Parsing line: '1 1 6 1 1 6                  # Isosceles'
+2025-04-23 14:13:54.435 [main] ERROR com.example.triangle.parser.TriangleStringParser - Invalid number of coordinates in line: '1 1 6 1 1 6                  # Isosceles'. Expected 6, found 8.
+2025-04-23 14:13:54.435 [main] ERROR com.example.triangle.main.Main - Skipping line due to error: '1 1 6 1 1 6                  # Isosceles'. Reason: Invalid number of coordinates in line: 1 1 6 1 1 6                  # Isosceles. Expected 6.
+2025-04-23 14:13:54.436 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Parsing line: '0 0 3 0 0 4                  # Right-Angled'
+2025-04-23 14:13:54.436 [main] ERROR com.example.triangle.parser.TriangleStringParser - Invalid number of coordinates in line: '0 0 3 0 0 4                  # Right-Angled'. Expected 6, found 8.
+2025-04-23 14:13:54.436 [main] ERROR com.example.triangle.main.Main - Skipping line due to error: '0 0 3 0 0 4                  # Right-Angled'. Reason: Invalid number of coordinates in line: 0 0 3 0 0 4                  # Right-Angled. Expected 6.
+2025-04-23 14:13:54.436 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Parsing line: '1 1 2 3 4 1                  # Scalene'
+2025-04-23 14:13:54.436 [main] ERROR com.example.triangle.parser.TriangleStringParser - Invalid number of coordinates in line: '1 1 2 3 4 1                  # Scalene'. Expected 6, found 8.
+2025-04-23 14:13:54.437 [main] ERROR com.example.triangle.main.Main - Skipping line due to error: '1 1 2 3 4 1                  # Scalene'. Reason: Invalid number of coordinates in line: 1 1 2 3 4 1                  # Scalene. Expected 6.
+2025-04-23 14:13:54.437 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Parsing line: '0 0 1 1 2 2                  # Invalid - Collinear points'
+2025-04-23 14:13:54.437 [main] ERROR com.example.triangle.parser.TriangleStringParser - Invalid number of coordinates in line: '0 0 1 1 2 2                  # Invalid - Collinear points'. Expected 6, found 11.
+2025-04-23 14:13:54.437 [main] ERROR com.example.triangle.main.Main - Skipping line due to error: '0 0 1 1 2 2                  # Invalid - Collinear points'. Reason: Invalid number of coordinates in line: 0 0 1 1 2 2                  # Invalid - Collinear points. Expected 6.
+2025-04-23 14:13:54.437 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Parsing line: '10 10 20 20 30 30            # Invalid - Collinear points'
+2025-04-23 14:13:54.438 [main] ERROR com.example.triangle.parser.TriangleStringParser - Invalid number of coordinates in line: '10 10 20 20 30 30            # Invalid - Collinear points'. Expected 6, found 11.
+2025-04-23 14:13:54.438 [main] ERROR com.example.triangle.main.Main - Skipping line due to error: '10 10 20 20 30 30            # Invalid - Collinear points'. Reason: Invalid number of coordinates in line: 10 10 20 20 30 30            # Invalid - Collinear points. Expected 6.
+2025-04-23 14:13:54.438 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Parsing line: '5 5 15 5 10 13.66            # Equilateral (approx)'
+2025-04-23 14:13:54.438 [main] ERROR com.example.triangle.parser.TriangleStringParser - Invalid number of coordinates in line: '5 5 15 5 10 13.66            # Equilateral (approx)'. Expected 6, found 9.
+2025-04-23 14:13:54.438 [main] ERROR com.example.triangle.main.Main - Skipping line due to error: '5 5 15 5 10 13.66            # Equilateral (approx)'. Reason: Invalid number of coordinates in line: 5 5 15 5 10 13.66            # Equilateral (approx). Expected 6.
+2025-04-23 14:13:54.439 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Parsing line: '0 0 4 0 0 3                  # Right-Angled (same as above but different order)'
+2025-04-23 14:13:54.439 [main] ERROR com.example.triangle.parser.TriangleStringParser - Invalid number of coordinates in line: '0 0 4 0 0 3                  # Right-Angled (same as above but different order)'. Expected 6, found 14.
+2025-04-23 14:13:54.439 [main] ERROR com.example.triangle.main.Main - Skipping line due to error: '0 0 4 0 0 3                  # Right-Angled (same as above but different order)'. Reason: Invalid number of coordinates in line: 0 0 4 0 0 3                  # Right-Angled (same as above but different order). Expected 6.
+2025-04-23 14:13:54.439 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Parsing line: '-1 -1 1 -1 0 0.732           # Isosceles'
+2025-04-23 14:13:54.439 [main] ERROR com.example.triangle.parser.TriangleStringParser - Invalid number of coordinates in line: '-1 -1 1 -1 0 0.732           # Isosceles'. Expected 6, found 8.
+2025-04-23 14:13:54.440 [main] ERROR com.example.triangle.main.Main - Skipping line due to error: '-1 -1 1 -1 0 0.732           # Isosceles'. Reason: Invalid number of coordinates in line: -1 -1 1 -1 0 0.732           # Isosceles. Expected 6.
+2025-04-23 14:13:54.440 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Parsing line: '-2 5 8 1 3 -6                # Scalene'
+2025-04-23 14:13:54.440 [main] ERROR com.example.triangle.parser.TriangleStringParser - Invalid number of coordinates in line: '-2 5 8 1 3 -6                # Scalene'. Expected 6, found 8.
+2025-04-23 14:13:54.440 [main] ERROR com.example.triangle.main.Main - Skipping line due to error: '-2 5 8 1 3 -6                # Scalene'. Reason: Invalid number of coordinates in line: -2 5 8 1 3 -6                # Scalene. Expected 6.
+2025-04-23 14:13:54.440 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Parsing line: 'invalid data here            # Invalid - Non-numeric'
+2025-04-23 14:13:54.441 [main] ERROR com.example.triangle.parser.TriangleStringParser - Invalid number of coordinates in line: 'invalid data here            # Invalid - Non-numeric'. Expected 6, found 7.
+2025-04-23 14:13:54.441 [main] ERROR com.example.triangle.main.Main - Skipping line due to error: 'invalid data here            # Invalid - Non-numeric'. Reason: Invalid number of coordinates in line: invalid data here            # Invalid - Non-numeric. Expected 6.
+2025-04-23 14:13:54.441 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Parsing line: '1 2 3 4 5                    # Invalid - Wrong number of coordinates'
+2025-04-23 14:13:54.442 [main] ERROR com.example.triangle.parser.TriangleStringParser - Invalid number of coordinates in line: '1 2 3 4 5                    # Invalid - Wrong number of coordinates'. Expected 6, found 12.
+2025-04-23 14:13:54.442 [main] ERROR com.example.triangle.main.Main - Skipping line due to error: '1 2 3 4 5                    # Invalid - Wrong number of coordinates'. Reason: Invalid number of coordinates in line: 1 2 3 4 5                    # Invalid - Wrong number of coordinates. Expected 6.
+2025-04-23 14:13:54.442 [main] INFO  com.example.triangle.main.Main - Successfully created 0 triangles.
+2025-04-23 14:13:54.442 [main] WARN  com.example.triangle.main.Main - Skipped 12 lines due to errors.
+2025-04-23 14:13:54.442 [main] WARN  com.example.triangle.main.Main - No valid triangles were created from the file.
+2025-04-23 14:13:54.443 [main] INFO  com.example.triangle.main.Main - Triangle application finished.
+2025-04-23 14:15:02.522 [main] INFO  com.example.triangle.reader.TriangleFileReader - Attempting to read file: temp_test_data\empty_data.txt
+2025-04-23 14:15:02.540 [main] INFO  com.example.triangle.reader.TriangleFileReader - Successfully read 0 lines from file: temp_test_data\empty_data.txt
+2025-04-23 14:15:02.551 [main] INFO  com.example.triangle.reader.TriangleFileReader - Attempting to read file: temp_test_data\non_existent_file.txt
+2025-04-23 14:15:02.552 [main] ERROR com.example.triangle.reader.TriangleFileReader - File not found at path: C:\Users\Gleb\IdeaProjects\lab2\temp_test_data\non_existent_file.txt
+2025-04-23 14:15:02.570 [main] INFO  com.example.triangle.reader.TriangleFileReader - Attempting to read file: temp_test_data\valid_data.txt
+2025-04-23 14:15:02.611 [main] INFO  com.example.triangle.reader.TriangleFileReader - Successfully read 3 lines from file: temp_test_data\valid_data.txt
+2025-04-23 14:16:05.270 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Parsing line: '1 2 3 4 5'
+2025-04-23 14:16:05.274 [main] ERROR com.example.triangle.parser.TriangleStringParser - Invalid number of coordinates in line: '1 2 3 4 5'. Expected 6, found 5.
+2025-04-23 14:16:05.279 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Parsing line: '1 2 3 4 5 6 7'
+2025-04-23 14:16:05.280 [main] ERROR com.example.triangle.parser.TriangleStringParser - Invalid number of coordinates in line: '1 2 3 4 5 6 7'. Expected 6, found 7.
+2025-04-23 14:16:05.282 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Parsing line: '1 2 3 4 5 six'
+2025-04-23 14:16:05.283 [main] ERROR com.example.triangle.parser.TriangleStringParser - Non-numeric value 'six' found in line: '1 2 3 4 5 six'
+java.lang.NumberFormatException: For input string: "six"
+	at jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054) ~[?:?]
+	at jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110) ~[?:?]
+	at java.lang.Double.parseDouble(Double.java:944) ~[?:?]
+	at com.example.triangle.parser.TriangleStringParser.parseCoordinates(TriangleStringParser.java:52) ~[classes/:?]
+	at com.example.triangle.parser.TriangleStringParserTest.testParseCoordinates_InvalidLine_ThrowsException(TriangleStringParserTest.java:62) ~[test-classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135) ~[testng-7.5.jar:7.5]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673) ~[testng-7.5.jar:7.5]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220) ~[testng-7.5.jar:7.5]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50) ~[testng-7.5.jar:7.5]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945) ~[testng-7.5.jar:7.5]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193) ~[testng-7.5.jar:7.5]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146) ~[testng-7.5.jar:7.5]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128) ~[testng-7.5.jar:7.5]
+	at java.util.ArrayList.forEach(ArrayList.java:1597) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:808) [testng-7.5.jar:7.5]
+	at org.testng.TestRunner.run(TestRunner.java:603) [testng-7.5.jar:7.5]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429) [testng-7.5.jar:7.5]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423) [testng-7.5.jar:7.5]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383) [testng-7.5.jar:7.5]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326) [testng-7.5.jar:7.5]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.5.jar:7.5]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.5.jar:7.5]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249) [testng-7.5.jar:7.5]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169) [testng-7.5.jar:7.5]
+	at org.testng.TestNG.runSuites(TestNG.java:1092) [testng-7.5.jar:7.5]
+	at org.testng.TestNG.run(TestNG.java:1060) [testng-7.5.jar:7.5]
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65) [testng-rt.jar:?]
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105) [testng-rt.jar:?]
+2025-04-23 14:16:05.347 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Parsing line: '1 2, 3 4 5 6'
+2025-04-23 14:16:05.348 [main] ERROR com.example.triangle.parser.TriangleStringParser - Non-numeric value '2,' found in line: '1 2, 3 4 5 6'
+java.lang.NumberFormatException: For input string: "2,"
+	at jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054) ~[?:?]
+	at jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110) ~[?:?]
+	at java.lang.Double.parseDouble(Double.java:944) ~[?:?]
+	at com.example.triangle.parser.TriangleStringParser.parseCoordinates(TriangleStringParser.java:52) ~[classes/:?]
+	at com.example.triangle.parser.TriangleStringParserTest.testParseCoordinates_InvalidLine_ThrowsException(TriangleStringParserTest.java:62) ~[test-classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135) ~[testng-7.5.jar:7.5]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673) ~[testng-7.5.jar:7.5]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220) ~[testng-7.5.jar:7.5]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50) ~[testng-7.5.jar:7.5]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945) ~[testng-7.5.jar:7.5]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193) ~[testng-7.5.jar:7.5]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146) ~[testng-7.5.jar:7.5]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128) ~[testng-7.5.jar:7.5]
+	at java.util.ArrayList.forEach(ArrayList.java:1597) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:808) [testng-7.5.jar:7.5]
+	at org.testng.TestRunner.run(TestRunner.java:603) [testng-7.5.jar:7.5]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429) [testng-7.5.jar:7.5]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423) [testng-7.5.jar:7.5]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383) [testng-7.5.jar:7.5]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326) [testng-7.5.jar:7.5]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.5.jar:7.5]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.5.jar:7.5]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249) [testng-7.5.jar:7.5]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169) [testng-7.5.jar:7.5]
+	at org.testng.TestNG.runSuites(TestNG.java:1092) [testng-7.5.jar:7.5]
+	at org.testng.TestNG.run(TestNG.java:1060) [testng-7.5.jar:7.5]
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65) [testng-rt.jar:?]
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105) [testng-rt.jar:?]
+2025-04-23 14:16:05.353 [main] WARN  com.example.triangle.parser.TriangleStringParser - Skipping null or empty line.
+2025-04-23 14:16:05.358 [main] WARN  com.example.triangle.parser.TriangleStringParser - Skipping null or empty line.
+2025-04-23 14:16:05.362 [main] WARN  com.example.triangle.parser.TriangleStringParser - Skipping null or empty line.
+2025-04-23 14:16:05.372 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Parsing line: '0 0 1 1 0 1'
+2025-04-23 14:16:05.374 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Successfully parsed coordinates: [0.0, 0.0, 1.0, 1.0, 0.0, 1.0]
+2025-04-23 14:16:05.379 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Parsing line: '1.5 -2.0 3e2 4.1 5.67 0.0'
+2025-04-23 14:16:05.380 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Successfully parsed coordinates: [1.5, -2.0, 300.0, 4.1, 5.67, 0.0]
+2025-04-23 14:16:05.383 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Parsing line: '1	2	3	4	5	6'
+2025-04-23 14:16:05.384 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Successfully parsed coordinates: [1.0, 2.0, 3.0, 4.0, 5.0, 6.0]
+2025-04-23 14:18:40.434 [main] WARN  com.example.triangle.validator.TriangleValidator - Validation failed: Incorrect number of coordinates. Expected 6, got 5
+2025-04-23 14:18:40.444 [main] WARN  com.example.triangle.validator.TriangleValidator - Validation failed: Incorrect number of coordinates. Expected 6, got 7
+2025-04-23 14:18:40.448 [main] WARN  com.example.triangle.validator.TriangleValidator - Validation failed: Incorrect number of coordinates. Expected 6, got 0
+2025-04-23 14:18:40.450 [main] WARN  com.example.triangle.validator.TriangleValidator - Validation failed: Incorrect number of coordinates. Expected 6, got null
+2025-04-23 14:18:40.467 [main] WARN  com.example.triangle.validator.TriangleValidator - Validation failed: Points are collinear. p1=Point{x=0.0, y=0.0}, p2=Point{x=1.0, y=0.0}, p3=Point{x=2.0, y=0.0}
+2025-04-23 14:18:40.475 [main] WARN  com.example.triangle.validator.TriangleValidator - Validation failed: Points are collinear. p1=Point{x=0.0, y=0.0}, p2=Point{x=0.0, y=1.0}, p3=Point{x=0.0, y=2.0}
+2025-04-23 14:18:40.478 [main] WARN  com.example.triangle.validator.TriangleValidator - Validation failed: Points are collinear. p1=Point{x=0.0, y=0.0}, p2=Point{x=1.0, y=1.0}, p3=Point{x=2.0, y=2.0}
+2025-04-23 14:18:40.480 [main] WARN  com.example.triangle.validator.TriangleValidator - Validation failed: Points are not distinct. p1=Point{x=0.0, y=0.0}, p2=Point{x=1.0, y=0.0}, p3=Point{x=0.0, y=0.0}
+2025-04-23 14:18:40.483 [main] WARN  com.example.triangle.validator.TriangleValidator - Validation failed: Points are not distinct. p1=Point{x=1.0, y=1.0}, p2=Point{x=1.0, y=1.0}, p3=Point{x=1.0, y=1.0}
+2025-04-23 14:18:40.486 [main] WARN  com.example.triangle.validator.TriangleValidator - Validation failed: One or more points are null.
+2025-04-23 14:18:40.489 [main] WARN  com.example.triangle.validator.TriangleValidator - Validation failed: One or more points are null.
+2025-04-23 14:18:40.491 [main] WARN  com.example.triangle.validator.TriangleValidator - Validation failed: One or more points are null.
+2025-04-23 14:18:40.497 [main] WARN  com.example.triangle.validator.TriangleValidator - Validation failed: One or more points are null.
+2025-04-23 14:18:40.500 [main] DEBUG com.example.triangle.validator.TriangleValidator - Validation success: Points form a valid triangle. p1=Point{x=0.0, y=0.0}, p2=Point{x=1.0, y=0.0}, p3=Point{x=0.0, y=1.0}
+2025-04-23 14:20:02.689 [main] DEBUG com.example.triangle.factory.TriangleFactoryImpl - Attempting to create triangle from coordinate values: (0.0, 0.0), (3.0, 0.0), (6.0, 0.0)
+2025-04-23 14:20:02.695 [main] DEBUG com.example.triangle.factory.TriangleFactoryImpl - Attempting to create triangle from points: Point{x=0.0, y=0.0}, Point{x=3.0, y=0.0}, Point{x=6.0, y=0.0}
+2025-04-23 14:20:02.695 [main] WARN  com.example.triangle.validator.TriangleValidator - Validation failed: Points are collinear. p1=Point{x=0.0, y=0.0}, p2=Point{x=3.0, y=0.0}, p3=Point{x=6.0, y=0.0}
+2025-04-23 14:20:02.696 [main] ERROR com.example.triangle.factory.TriangleFactoryImpl - Cannot create triangle: Points are invalid (e.g., null, not distinct, or collinear). Points: Point{x=0.0, y=0.0}, Point{x=3.0, y=0.0}, Point{x=6.0, y=0.0}
+2025-04-23 14:20:02.704 [main] DEBUG com.example.triangle.factory.TriangleFactoryImpl - Attempting to create triangle from coordinate values: (0.0, 0.0), (3.0, 0.0), (0.0, 4.0)
+2025-04-23 14:20:02.705 [main] DEBUG com.example.triangle.factory.TriangleFactoryImpl - Attempting to create triangle from points: Point{x=0.0, y=0.0}, Point{x=3.0, y=0.0}, Point{x=0.0, y=4.0}
+2025-04-23 14:20:02.707 [main] DEBUG com.example.triangle.validator.TriangleValidator - Validation success: Points form a valid triangle. p1=Point{x=0.0, y=0.0}, p2=Point{x=3.0, y=0.0}, p3=Point{x=0.0, y=4.0}
+2025-04-23 14:20:02.709 [main] INFO  com.example.triangle.factory.TriangleFactoryImpl - Successfully created Triangle with ID 1
+2025-04-23 14:20:02.720 [main] DEBUG com.example.triangle.factory.TriangleFactoryImpl - Attempting to create triangle from coordinate list: [0.0, 0.0, 3.0, 0.0, 6.0, 0.0]
+2025-04-23 14:20:02.721 [main] DEBUG com.example.triangle.factory.TriangleFactoryImpl - Attempting to create triangle from points: Point{x=0.0, y=0.0}, Point{x=3.0, y=0.0}, Point{x=6.0, y=0.0}
+2025-04-23 14:20:02.721 [main] WARN  com.example.triangle.validator.TriangleValidator - Validation failed: Points are collinear. p1=Point{x=0.0, y=0.0}, p2=Point{x=3.0, y=0.0}, p3=Point{x=6.0, y=0.0}
+2025-04-23 14:20:02.721 [main] ERROR com.example.triangle.factory.TriangleFactoryImpl - Cannot create triangle: Points are invalid (e.g., null, not distinct, or collinear). Points: Point{x=0.0, y=0.0}, Point{x=3.0, y=0.0}, Point{x=6.0, y=0.0}
+2025-04-23 14:20:02.727 [main] DEBUG com.example.triangle.factory.TriangleFactoryImpl - Attempting to create triangle from coordinate list: [0.0, 0.0, 3.0, 0.0, 0.0]
+2025-04-23 14:20:02.727 [main] WARN  com.example.triangle.validator.TriangleValidator - Validation failed: Incorrect number of coordinates. Expected 6, got 5
+2025-04-23 14:20:02.728 [main] ERROR com.example.triangle.factory.TriangleFactoryImpl - Cannot create triangle: Invalid number of coordinates provided. Expected 6, got 5
+2025-04-23 14:20:02.732 [main] DEBUG com.example.triangle.factory.TriangleFactoryImpl - Attempting to create triangle from coordinate list: [0.0, 0.0, 3.0, 0.0, 0.0, 4.0]
+2025-04-23 14:20:02.732 [main] DEBUG com.example.triangle.factory.TriangleFactoryImpl - Attempting to create triangle from points: Point{x=0.0, y=0.0}, Point{x=3.0, y=0.0}, Point{x=0.0, y=4.0}
+2025-04-23 14:20:02.740 [main] DEBUG com.example.triangle.validator.TriangleValidator - Validation success: Points form a valid triangle. p1=Point{x=0.0, y=0.0}, p2=Point{x=3.0, y=0.0}, p3=Point{x=0.0, y=4.0}
+2025-04-23 14:20:02.741 [main] INFO  com.example.triangle.factory.TriangleFactoryImpl - Successfully created Triangle with ID 2
+2025-04-23 14:20:02.758 [main] DEBUG com.example.triangle.factory.TriangleFactoryImpl - Attempting to create triangle from points: Point{x=0.0, y=0.0}, Point{x=3.0, y=0.0}, Point{x=6.0, y=0.0}
+2025-04-23 14:20:02.759 [main] WARN  com.example.triangle.validator.TriangleValidator - Validation failed: Points are collinear. p1=Point{x=0.0, y=0.0}, p2=Point{x=3.0, y=0.0}, p3=Point{x=6.0, y=0.0}
+2025-04-23 14:20:02.760 [main] ERROR com.example.triangle.factory.TriangleFactoryImpl - Cannot create triangle: Points are invalid (e.g., null, not distinct, or collinear). Points: Point{x=0.0, y=0.0}, Point{x=3.0, y=0.0}, Point{x=6.0, y=0.0}
+2025-04-23 14:20:02.766 [main] DEBUG com.example.triangle.factory.TriangleFactoryImpl - Attempting to create triangle from points: Point{x=0.0, y=0.0}, Point{x=3.0, y=0.0}, Point{x=0.0, y=0.0}
+2025-04-23 14:20:02.768 [main] WARN  com.example.triangle.validator.TriangleValidator - Validation failed: Points are not distinct. p1=Point{x=0.0, y=0.0}, p2=Point{x=3.0, y=0.0}, p3=Point{x=0.0, y=0.0}
+2025-04-23 14:20:02.769 [main] ERROR com.example.triangle.factory.TriangleFactoryImpl - Cannot create triangle: Points are invalid (e.g., null, not distinct, or collinear). Points: Point{x=0.0, y=0.0}, Point{x=3.0, y=0.0}, Point{x=0.0, y=0.0}
+2025-04-23 14:20:02.772 [main] DEBUG com.example.triangle.factory.TriangleFactoryImpl - Attempting to create triangle from points: null, Point{x=3.0, y=0.0}, Point{x=0.0, y=4.0}
+2025-04-23 14:20:02.773 [main] WARN  com.example.triangle.validator.TriangleValidator - Validation failed: One or more points are null.
+2025-04-23 14:20:02.773 [main] ERROR com.example.triangle.factory.TriangleFactoryImpl - Cannot create triangle: Points are invalid (e.g., null, not distinct, or collinear). Points: null, Point{x=3.0, y=0.0}, Point{x=0.0, y=4.0}
+2025-04-23 14:20:02.803 [main] DEBUG com.example.triangle.factory.TriangleFactoryImpl - Attempting to create triangle from points: null, Point{x=3.0, y=0.0}, Point{x=0.0, y=4.0}
+2025-04-23 14:20:02.804 [main] WARN  com.example.triangle.validator.TriangleValidator - Validation failed: One or more points are null.
+2025-04-23 14:20:02.804 [main] ERROR com.example.triangle.factory.TriangleFactoryImpl - Cannot create triangle: Points are invalid (e.g., null, not distinct, or collinear). Points: null, Point{x=3.0, y=0.0}, Point{x=0.0, y=4.0}
+2025-04-23 14:20:02.806 [main] DEBUG com.example.triangle.factory.TriangleFactoryImpl - Attempting to create triangle from points: Point{x=0.0, y=0.0}, Point{x=3.0, y=0.0}, Point{x=0.0, y=4.0}
+2025-04-23 14:20:02.806 [main] DEBUG com.example.triangle.validator.TriangleValidator - Validation success: Points form a valid triangle. p1=Point{x=0.0, y=0.0}, p2=Point{x=3.0, y=0.0}, p3=Point{x=0.0, y=4.0}
+2025-04-23 14:20:02.807 [main] INFO  com.example.triangle.factory.TriangleFactoryImpl - Successfully created Triangle with ID 3
+2025-04-23 14:22:12.594 [main] INFO  com.example.triangle.main.Main - Triangle application starting...
+2025-04-23 14:22:12.707 [main] INFO  com.example.triangle.reader.TriangleFileReader - Attempting to read file: data/triangles.txt
+2025-04-23 14:22:12.710 [main] INFO  com.example.triangle.reader.TriangleFileReader - Successfully read 12 lines from file: data/triangles.txt
+2025-04-23 14:22:12.711 [main] INFO  com.example.triangle.main.Main - Read 12 lines from the file.
+2025-04-23 14:22:12.711 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Parsing effective line part: '0.0 0.0   5.0 0.0   2.5 4.33'
+2025-04-23 14:22:12.712 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Successfully parsed coordinates: [0.0, 0.0, 5.0, 0.0, 2.5, 4.33]
+2025-04-23 14:22:12.712 [main] DEBUG com.example.triangle.factory.TriangleFactoryImpl - Attempting to create triangle from coordinate list: [0.0, 0.0, 5.0, 0.0, 2.5, 4.33]
+2025-04-23 14:22:12.715 [main] DEBUG com.example.triangle.factory.TriangleFactoryImpl - Attempting to create triangle from points: Point{x=0.0, y=0.0}, Point{x=5.0, y=0.0}, Point{x=2.5, y=4.33}
+2025-04-23 14:22:12.715 [main] DEBUG com.example.triangle.validator.TriangleValidator - Validation success: Points form a valid triangle. p1=Point{x=0.0, y=0.0}, p2=Point{x=5.0, y=0.0}, p3=Point{x=2.5, y=4.33}
+2025-04-23 14:22:12.716 [main] INFO  com.example.triangle.factory.TriangleFactoryImpl - Successfully created Triangle with ID 1
+2025-04-23 14:22:12.717 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Parsing effective line part: '1 1 6 1 1 6'
+2025-04-23 14:22:12.717 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Successfully parsed coordinates: [1.0, 1.0, 6.0, 1.0, 1.0, 6.0]
+2025-04-23 14:22:12.717 [main] DEBUG com.example.triangle.factory.TriangleFactoryImpl - Attempting to create triangle from coordinate list: [1.0, 1.0, 6.0, 1.0, 1.0, 6.0]
+2025-04-23 14:22:12.718 [main] DEBUG com.example.triangle.factory.TriangleFactoryImpl - Attempting to create triangle from points: Point{x=1.0, y=1.0}, Point{x=6.0, y=1.0}, Point{x=1.0, y=6.0}
+2025-04-23 14:22:12.718 [main] DEBUG com.example.triangle.validator.TriangleValidator - Validation success: Points form a valid triangle. p1=Point{x=1.0, y=1.0}, p2=Point{x=6.0, y=1.0}, p3=Point{x=1.0, y=6.0}
+2025-04-23 14:22:12.718 [main] INFO  com.example.triangle.factory.TriangleFactoryImpl - Successfully created Triangle with ID 2
+2025-04-23 14:22:12.719 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Parsing effective line part: '0 0 3 0 0 4'
+2025-04-23 14:22:12.719 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Successfully parsed coordinates: [0.0, 0.0, 3.0, 0.0, 0.0, 4.0]
+2025-04-23 14:22:12.719 [main] DEBUG com.example.triangle.factory.TriangleFactoryImpl - Attempting to create triangle from coordinate list: [0.0, 0.0, 3.0, 0.0, 0.0, 4.0]
+2025-04-23 14:22:12.720 [main] DEBUG com.example.triangle.factory.TriangleFactoryImpl - Attempting to create triangle from points: Point{x=0.0, y=0.0}, Point{x=3.0, y=0.0}, Point{x=0.0, y=4.0}
+2025-04-23 14:22:12.720 [main] DEBUG com.example.triangle.validator.TriangleValidator - Validation success: Points form a valid triangle. p1=Point{x=0.0, y=0.0}, p2=Point{x=3.0, y=0.0}, p3=Point{x=0.0, y=4.0}
+2025-04-23 14:22:12.721 [main] INFO  com.example.triangle.factory.TriangleFactoryImpl - Successfully created Triangle with ID 3
+2025-04-23 14:22:12.721 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Parsing effective line part: '1 1 2 3 4 1'
+2025-04-23 14:22:12.722 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Successfully parsed coordinates: [1.0, 1.0, 2.0, 3.0, 4.0, 1.0]
+2025-04-23 14:22:12.722 [main] DEBUG com.example.triangle.factory.TriangleFactoryImpl - Attempting to create triangle from coordinate list: [1.0, 1.0, 2.0, 3.0, 4.0, 1.0]
+2025-04-23 14:22:12.722 [main] DEBUG com.example.triangle.factory.TriangleFactoryImpl - Attempting to create triangle from points: Point{x=1.0, y=1.0}, Point{x=2.0, y=3.0}, Point{x=4.0, y=1.0}
+2025-04-23 14:22:12.723 [main] DEBUG com.example.triangle.validator.TriangleValidator - Validation success: Points form a valid triangle. p1=Point{x=1.0, y=1.0}, p2=Point{x=2.0, y=3.0}, p3=Point{x=4.0, y=1.0}
+2025-04-23 14:22:12.723 [main] INFO  com.example.triangle.factory.TriangleFactoryImpl - Successfully created Triangle with ID 4
+2025-04-23 14:22:12.724 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Parsing effective line part: '0 0 1 1 2 2'
+2025-04-23 14:22:12.726 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Successfully parsed coordinates: [0.0, 0.0, 1.0, 1.0, 2.0, 2.0]
+2025-04-23 14:22:12.727 [main] DEBUG com.example.triangle.factory.TriangleFactoryImpl - Attempting to create triangle from coordinate list: [0.0, 0.0, 1.0, 1.0, 2.0, 2.0]
+2025-04-23 14:22:12.727 [main] DEBUG com.example.triangle.factory.TriangleFactoryImpl - Attempting to create triangle from points: Point{x=0.0, y=0.0}, Point{x=1.0, y=1.0}, Point{x=2.0, y=2.0}
+2025-04-23 14:22:12.728 [main] WARN  com.example.triangle.validator.TriangleValidator - Validation failed: Points are collinear. p1=Point{x=0.0, y=0.0}, p2=Point{x=1.0, y=1.0}, p3=Point{x=2.0, y=2.0}
+2025-04-23 14:22:12.728 [main] ERROR com.example.triangle.factory.TriangleFactoryImpl - Cannot create triangle: Points are invalid (e.g., null, not distinct, or collinear). Points: Point{x=0.0, y=0.0}, Point{x=1.0, y=1.0}, Point{x=2.0, y=2.0}
+2025-04-23 14:22:12.728 [main] ERROR com.example.triangle.main.Main - Skipping line due to error: '0 0 1 1 2 2                  # Invalid - Collinear points'. Reason: Cannot create triangle: Points are invalid (e.g., null, not distinct, or collinear). Points: Point{x=0.0, y=0.0}, Point{x=1.0, y=1.0}, Point{x=2.0, y=2.0}
+2025-04-23 14:22:12.729 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Parsing effective line part: '10 10 20 20 30 30'
+2025-04-23 14:22:12.729 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Successfully parsed coordinates: [10.0, 10.0, 20.0, 20.0, 30.0, 30.0]
+2025-04-23 14:22:12.729 [main] DEBUG com.example.triangle.factory.TriangleFactoryImpl - Attempting to create triangle from coordinate list: [10.0, 10.0, 20.0, 20.0, 30.0, 30.0]
+2025-04-23 14:22:12.730 [main] DEBUG com.example.triangle.factory.TriangleFactoryImpl - Attempting to create triangle from points: Point{x=10.0, y=10.0}, Point{x=20.0, y=20.0}, Point{x=30.0, y=30.0}
+2025-04-23 14:22:12.730 [main] WARN  com.example.triangle.validator.TriangleValidator - Validation failed: Points are collinear. p1=Point{x=10.0, y=10.0}, p2=Point{x=20.0, y=20.0}, p3=Point{x=30.0, y=30.0}
+2025-04-23 14:22:12.730 [main] ERROR com.example.triangle.factory.TriangleFactoryImpl - Cannot create triangle: Points are invalid (e.g., null, not distinct, or collinear). Points: Point{x=10.0, y=10.0}, Point{x=20.0, y=20.0}, Point{x=30.0, y=30.0}
+2025-04-23 14:22:12.731 [main] ERROR com.example.triangle.main.Main - Skipping line due to error: '10 10 20 20 30 30            # Invalid - Collinear points'. Reason: Cannot create triangle: Points are invalid (e.g., null, not distinct, or collinear). Points: Point{x=10.0, y=10.0}, Point{x=20.0, y=20.0}, Point{x=30.0, y=30.0}
+2025-04-23 14:22:12.731 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Parsing effective line part: '5 5 15 5 10 13.66'
+2025-04-23 14:22:12.731 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Successfully parsed coordinates: [5.0, 5.0, 15.0, 5.0, 10.0, 13.66]
+2025-04-23 14:22:12.732 [main] DEBUG com.example.triangle.factory.TriangleFactoryImpl - Attempting to create triangle from coordinate list: [5.0, 5.0, 15.0, 5.0, 10.0, 13.66]
+2025-04-23 14:22:12.732 [main] DEBUG com.example.triangle.factory.TriangleFactoryImpl - Attempting to create triangle from points: Point{x=5.0, y=5.0}, Point{x=15.0, y=5.0}, Point{x=10.0, y=13.66}
+2025-04-23 14:22:12.732 [main] DEBUG com.example.triangle.validator.TriangleValidator - Validation success: Points form a valid triangle. p1=Point{x=5.0, y=5.0}, p2=Point{x=15.0, y=5.0}, p3=Point{x=10.0, y=13.66}
+2025-04-23 14:22:12.732 [main] INFO  com.example.triangle.factory.TriangleFactoryImpl - Successfully created Triangle with ID 5
+2025-04-23 14:22:12.733 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Parsing effective line part: '0 0 4 0 0 3'
+2025-04-23 14:22:12.733 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Successfully parsed coordinates: [0.0, 0.0, 4.0, 0.0, 0.0, 3.0]
+2025-04-23 14:22:12.733 [main] DEBUG com.example.triangle.factory.TriangleFactoryImpl - Attempting to create triangle from coordinate list: [0.0, 0.0, 4.0, 0.0, 0.0, 3.0]
+2025-04-23 14:22:12.734 [main] DEBUG com.example.triangle.factory.TriangleFactoryImpl - Attempting to create triangle from points: Point{x=0.0, y=0.0}, Point{x=4.0, y=0.0}, Point{x=0.0, y=3.0}
+2025-04-23 14:22:12.734 [main] DEBUG com.example.triangle.validator.TriangleValidator - Validation success: Points form a valid triangle. p1=Point{x=0.0, y=0.0}, p2=Point{x=4.0, y=0.0}, p3=Point{x=0.0, y=3.0}
+2025-04-23 14:22:12.734 [main] INFO  com.example.triangle.factory.TriangleFactoryImpl - Successfully created Triangle with ID 6
+2025-04-23 14:22:12.734 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Parsing effective line part: '-1 -1 1 -1 0 0.732'
+2025-04-23 14:22:12.735 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Successfully parsed coordinates: [-1.0, -1.0, 1.0, -1.0, 0.0, 0.732]
+2025-04-23 14:22:12.736 [main] DEBUG com.example.triangle.factory.TriangleFactoryImpl - Attempting to create triangle from coordinate list: [-1.0, -1.0, 1.0, -1.0, 0.0, 0.732]
+2025-04-23 14:22:12.736 [main] DEBUG com.example.triangle.factory.TriangleFactoryImpl - Attempting to create triangle from points: Point{x=-1.0, y=-1.0}, Point{x=1.0, y=-1.0}, Point{x=0.0, y=0.732}
+2025-04-23 14:22:12.736 [main] DEBUG com.example.triangle.validator.TriangleValidator - Validation success: Points form a valid triangle. p1=Point{x=-1.0, y=-1.0}, p2=Point{x=1.0, y=-1.0}, p3=Point{x=0.0, y=0.732}
+2025-04-23 14:22:12.737 [main] INFO  com.example.triangle.factory.TriangleFactoryImpl - Successfully created Triangle with ID 7
+2025-04-23 14:22:12.737 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Parsing effective line part: '-2 5 8 1 3 -6'
+2025-04-23 14:22:12.737 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Successfully parsed coordinates: [-2.0, 5.0, 8.0, 1.0, 3.0, -6.0]
+2025-04-23 14:22:12.737 [main] DEBUG com.example.triangle.factory.TriangleFactoryImpl - Attempting to create triangle from coordinate list: [-2.0, 5.0, 8.0, 1.0, 3.0, -6.0]
+2025-04-23 14:22:12.738 [main] DEBUG com.example.triangle.factory.TriangleFactoryImpl - Attempting to create triangle from points: Point{x=-2.0, y=5.0}, Point{x=8.0, y=1.0}, Point{x=3.0, y=-6.0}
+2025-04-23 14:22:12.738 [main] DEBUG com.example.triangle.validator.TriangleValidator - Validation success: Points form a valid triangle. p1=Point{x=-2.0, y=5.0}, p2=Point{x=8.0, y=1.0}, p3=Point{x=3.0, y=-6.0}
+2025-04-23 14:22:12.738 [main] INFO  com.example.triangle.factory.TriangleFactoryImpl - Successfully created Triangle with ID 8
+2025-04-23 14:22:12.738 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Parsing effective line part: 'invalid data here'
+2025-04-23 14:22:12.739 [main] ERROR com.example.triangle.parser.TriangleStringParser - Invalid number of coordinates in line part: 'invalid data here'. Expected 6, found 3. Original line: 'invalid data here            # Invalid - Non-numeric'
+2025-04-23 14:22:12.739 [main] ERROR com.example.triangle.main.Main - Skipping line due to error: 'invalid data here            # Invalid - Non-numeric'. Reason: Invalid number of coordinates in line: invalid data here            # Invalid - Non-numeric. Expected 6 after removing comments.
+2025-04-23 14:22:12.740 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Parsing effective line part: '1 2 3 4 5'
+2025-04-23 14:22:12.740 [main] ERROR com.example.triangle.parser.TriangleStringParser - Invalid number of coordinates in line part: '1 2 3 4 5'. Expected 6, found 5. Original line: '1 2 3 4 5                    # Invalid - Wrong number of coordinates'
+2025-04-23 14:22:12.740 [main] ERROR com.example.triangle.main.Main - Skipping line due to error: '1 2 3 4 5                    # Invalid - Wrong number of coordinates'. Reason: Invalid number of coordinates in line: 1 2 3 4 5                    # Invalid - Wrong number of coordinates. Expected 6 after removing comments.
+2025-04-23 14:22:12.740 [main] INFO  com.example.triangle.main.Main - Successfully created 8 triangles.
+2025-04-23 14:22:12.740 [main] WARN  com.example.triangle.main.Main - Skipped 4 lines due to errors.
+2025-04-23 14:22:12.741 [main] INFO  com.example.triangle.service.TriangleAnalysisService - Grouping 8 triangles by type.
+2025-04-23 14:22:12.790 [main] DEBUG com.example.triangle.service.TriangleTypeService - Triangle ID 1 is ISOSCELES
+2025-04-23 14:22:12.791 [main] DEBUG com.example.triangle.service.TriangleTypeService - Triangle ID 2 is RIGHT_ANGLED
+2025-04-23 14:22:12.791 [main] DEBUG com.example.triangle.service.TriangleTypeService - Triangle ID 3 is RIGHT_ANGLED
+2025-04-23 14:22:12.791 [main] DEBUG com.example.triangle.service.TriangleTypeService - Triangle ID 4 is SCALENE
+2025-04-23 14:22:12.792 [main] DEBUG com.example.triangle.service.TriangleTypeService - Triangle ID 5 is ISOSCELES
+2025-04-23 14:22:12.792 [main] DEBUG com.example.triangle.service.TriangleTypeService - Triangle ID 6 is RIGHT_ANGLED
+2025-04-23 14:22:12.792 [main] DEBUG com.example.triangle.service.TriangleTypeService - Triangle ID 7 is ISOSCELES
+2025-04-23 14:22:12.792 [main] DEBUG com.example.triangle.service.TriangleTypeService - Triangle ID 8 is SCALENE
+2025-04-23 14:22:12.793 [main] INFO  com.example.triangle.service.TriangleAnalysisService - Found 2 triangles of type: SCALENE
+2025-04-23 14:22:12.793 [main] INFO  com.example.triangle.service.TriangleAnalysisService - Found 3 triangles of type: ISOSCELES
+2025-04-23 14:22:12.793 [main] INFO  com.example.triangle.service.TriangleAnalysisService - Found 3 triangles of type: RIGHT_ANGLED
+2025-04-23 14:22:12.797 [main] INFO  com.example.triangle.service.TriangleAnalysisService - Analyzing groups to find min/max area/perimeter...
+2025-04-23 14:22:12.798 [main] DEBUG com.example.triangle.service.TriangleAnalysisService - Analyzing group: SCALENE
+2025-04-23 14:22:12.800 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 4: 3.0
+2025-04-23 14:22:12.801 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 8: 45.0
+2025-04-23 14:22:12.802 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 4: 3.0
+2025-04-23 14:22:12.803 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 8: 45.0
+2025-04-23 14:22:12.803 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 4: 8.06449510224598
+2025-04-23 14:22:12.804 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 8: 31.455700854906205
+2025-04-23 14:22:12.819 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 4: 8.06449510224598
+2025-04-23 14:22:12.821 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 8: 31.455700854906205
+2025-04-23 14:22:12.824 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 4: 3.0
+2025-04-23 14:22:12.825 [main] INFO  com.example.triangle.service.TriangleAnalysisService - Group [SCALENE]: Min Area Triangle ID: 4, Area: 3.0
+2025-04-23 14:22:12.827 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 8: 45.0
+2025-04-23 14:22:12.827 [main] INFO  com.example.triangle.service.TriangleAnalysisService - Group [SCALENE]: Max Area Triangle ID: 8, Area: 45.0
+2025-04-23 14:22:12.828 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 4: 8.06449510224598
+2025-04-23 14:22:12.828 [main] INFO  com.example.triangle.service.TriangleAnalysisService - Group [SCALENE]: Min Perimeter Triangle ID: 4, Perimeter: 8.06449510224598
+2025-04-23 14:22:12.829 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 8: 31.455700854906205
+2025-04-23 14:22:12.830 [main] INFO  com.example.triangle.service.TriangleAnalysisService - Group [SCALENE]: Max Perimeter Triangle ID: 8, Perimeter: 31.455700854906205
+2025-04-23 14:22:12.830 [main] DEBUG com.example.triangle.service.TriangleAnalysisService - Analyzing group: ISOSCELES
+2025-04-23 14:22:12.831 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 1: 10.825
+2025-04-23 14:22:12.832 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 5: 43.300000000000004
+2025-04-23 14:22:12.834 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 1: 10.825
+2025-04-23 14:22:12.834 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 7: 1.732
+2025-04-23 14:22:12.834 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 1: 10.825
+2025-04-23 14:22:12.834 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 5: 43.300000000000004
+2025-04-23 14:22:12.834 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 5: 43.300000000000004
+2025-04-23 14:22:12.835 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 7: 1.732
+2025-04-23 14:22:12.835 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 1: 14.999779997579946
+2025-04-23 14:22:12.835 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 5: 29.999559995159892
+2025-04-23 14:22:12.835 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 1: 14.999779997579946
+2025-04-23 14:22:12.836 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 7: 5.999911999031978
+2025-04-23 14:22:12.836 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 1: 14.999779997579946
+2025-04-23 14:22:12.837 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 5: 29.999559995159892
+2025-04-23 14:22:12.837 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 5: 29.999559995159892
+2025-04-23 14:22:12.838 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 7: 5.999911999031978
+2025-04-23 14:22:12.838 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 7: 1.732
+2025-04-23 14:22:12.838 [main] INFO  com.example.triangle.service.TriangleAnalysisService - Group [ISOSCELES]: Min Area Triangle ID: 7, Area: 1.732
+2025-04-23 14:22:12.838 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 5: 43.300000000000004
+2025-04-23 14:22:12.839 [main] INFO  com.example.triangle.service.TriangleAnalysisService - Group [ISOSCELES]: Max Area Triangle ID: 5, Area: 43.300000000000004
+2025-04-23 14:22:12.839 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 7: 5.999911999031978
+2025-04-23 14:22:12.839 [main] INFO  com.example.triangle.service.TriangleAnalysisService - Group [ISOSCELES]: Min Perimeter Triangle ID: 7, Perimeter: 5.999911999031978
+2025-04-23 14:22:12.840 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 5: 29.999559995159892
+2025-04-23 14:22:12.842 [main] INFO  com.example.triangle.service.TriangleAnalysisService - Group [ISOSCELES]: Max Perimeter Triangle ID: 5, Perimeter: 29.999559995159892
+2025-04-23 14:22:12.843 [main] DEBUG com.example.triangle.service.TriangleAnalysisService - Analyzing group: RIGHT_ANGLED
+2025-04-23 14:22:12.843 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 2: 12.5
+2025-04-23 14:22:12.843 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 3: 6.0
+2025-04-23 14:22:12.844 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 3: 6.0
+2025-04-23 14:22:12.844 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 6: 6.0
+2025-04-23 14:22:12.844 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 2: 12.5
+2025-04-23 14:22:12.844 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 3: 6.0
+2025-04-23 14:22:12.844 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 2: 12.5
+2025-04-23 14:22:12.845 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 6: 6.0
+2025-04-23 14:22:12.845 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 2: 17.071067811865476
+2025-04-23 14:22:12.846 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 3: 12.0
+2025-04-23 14:22:12.847 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 3: 12.0
+2025-04-23 14:22:12.847 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 6: 12.0
+2025-04-23 14:22:12.848 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 2: 17.071067811865476
+2025-04-23 14:22:12.849 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 3: 12.0
+2025-04-23 14:22:12.851 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 2: 17.071067811865476
+2025-04-23 14:22:12.853 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 6: 12.0
+2025-04-23 14:22:12.854 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 3: 6.0
+2025-04-23 14:22:12.854 [main] INFO  com.example.triangle.service.TriangleAnalysisService - Group [RIGHT_ANGLED]: Min Area Triangle ID: 3, Area: 6.0
+2025-04-23 14:22:12.854 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 2: 12.5
+2025-04-23 14:22:12.854 [main] INFO  com.example.triangle.service.TriangleAnalysisService - Group [RIGHT_ANGLED]: Max Area Triangle ID: 2, Area: 12.5
+2025-04-23 14:22:12.854 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 3: 12.0
+2025-04-23 14:22:12.856 [main] INFO  com.example.triangle.service.TriangleAnalysisService - Group [RIGHT_ANGLED]: Min Perimeter Triangle ID: 3, Perimeter: 12.0
+2025-04-23 14:22:12.856 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 2: 17.071067811865476
+2025-04-23 14:22:12.857 [main] INFO  com.example.triangle.service.TriangleAnalysisService - Group [RIGHT_ANGLED]: Max Perimeter Triangle ID: 2, Perimeter: 17.071067811865476
+2025-04-23 14:22:12.859 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 4: 3.0
+2025-04-23 14:22:12.859 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 4: 8.06449510224598
+2025-04-23 14:22:12.886 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 8: 45.0
+2025-04-23 14:22:12.886 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 8: 31.455700854906205
+2025-04-23 14:22:12.887 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 4: 3.0
+2025-04-23 14:22:12.887 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 4: 8.06449510224598
+2025-04-23 14:22:12.890 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 8: 45.0
+2025-04-23 14:22:12.890 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 8: 31.455700854906205
+2025-04-23 14:22:12.891 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 7: 1.732
+2025-04-23 14:22:12.891 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 7: 5.999911999031978
+2025-04-23 14:22:12.895 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 5: 43.300000000000004
+2025-04-23 14:22:12.896 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 5: 29.999559995159892
+2025-04-23 14:22:12.897 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 7: 1.732
+2025-04-23 14:22:12.897 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 7: 5.999911999031978
+2025-04-23 14:22:12.898 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 5: 43.300000000000004
+2025-04-23 14:22:12.898 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 5: 29.999559995159892
+2025-04-23 14:22:12.901 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 3: 6.0
+2025-04-23 14:22:12.901 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 3: 12.0
+2025-04-23 14:22:12.901 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 2: 12.5
+2025-04-23 14:22:12.901 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 2: 17.071067811865476
+2025-04-23 14:22:12.902 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 3: 6.0
+2025-04-23 14:22:12.902 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 3: 12.0
+2025-04-23 14:22:12.903 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 2: 12.5
+2025-04-23 14:22:12.903 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 2: 17.071067811865476
+2025-04-23 14:22:12.904 [main] INFO  com.example.triangle.main.Main - Triangle application finished.
+2025-04-30 13:58:04.787 [main] INFO  com.example.triangle.main.Main - Triangle application starting with Repository and Warehouse...
+2025-04-30 13:58:04.819 [main] INFO  com.example.triangle.repository.TriangleRepository - TriangleRepository Singleton instance created.
+2025-04-30 13:58:04.850 [main] INFO  com.example.triangle.warehouse.TriangleWarehouse - TriangleWarehouse Singleton instance created.
+2025-04-30 13:58:04.944 [main] DEBUG com.example.triangle.repository.TriangleRepository - Observer TriangleWarehouse attached.
+2025-04-30 13:58:04.944 [main] INFO  com.example.triangle.main.Main - Warehouse attached as observer to Repository.
+2025-04-30 13:58:04.944 [main] INFO  com.example.triangle.repository.TriangleRepository - Repository cleared.
+2025-04-30 13:58:04.944 [main] INFO  com.example.triangle.warehouse.TriangleWarehouse - All metrics cleared from Warehouse.
+2025-04-30 13:58:04.975 [main] INFO  com.example.triangle.reader.TriangleFileReader - Attempting to read file: data/triangles.txt
+2025-04-30 13:58:05.022 [main] INFO  com.example.triangle.reader.TriangleFileReader - Successfully read 12 lines from file: data/triangles.txt
+2025-04-30 13:58:05.022 [main] INFO  com.example.triangle.main.Main - Read 12 lines from the file.
+2025-04-30 13:58:05.022 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Parsing effective line part: '0.0 0.0   5.0 0.0   2.5 4.33'
+2025-04-30 13:58:05.022 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Successfully parsed coordinates: [0.0, 0.0, 5.0, 0.0, 2.5, 4.33]
+2025-04-30 13:58:05.022 [main] DEBUG com.example.triangle.factory.TriangleFactoryImpl - Attempting to create triangle from coordinate list: [0.0, 0.0, 5.0, 0.0, 2.5, 4.33]
+2025-04-30 13:58:05.022 [main] DEBUG com.example.triangle.factory.TriangleFactoryImpl - Attempting to create triangle from points: Point{x=0.0, y=0.0}, Point{x=5.0, y=0.0}, Point{x=2.5, y=4.33}
+2025-04-30 13:58:05.022 [main] DEBUG com.example.triangle.validator.TriangleValidator - Validation success: Points form a valid triangle. p1=Point{x=0.0, y=0.0}, p2=Point{x=5.0, y=0.0}, p3=Point{x=2.5, y=4.33}
+2025-04-30 13:58:05.022 [main] INFO  com.example.triangle.factory.TriangleFactoryImpl - Successfully created Triangle with ID 1
+2025-04-30 13:58:05.022 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Parsing effective line part: '1 1 6 1 1 6'
+2025-04-30 13:58:05.022 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Successfully parsed coordinates: [1.0, 1.0, 6.0, 1.0, 1.0, 6.0]
+2025-04-30 13:58:05.022 [main] DEBUG com.example.triangle.factory.TriangleFactoryImpl - Attempting to create triangle from coordinate list: [1.0, 1.0, 6.0, 1.0, 1.0, 6.0]
+2025-04-30 13:58:05.022 [main] DEBUG com.example.triangle.factory.TriangleFactoryImpl - Attempting to create triangle from points: Point{x=1.0, y=1.0}, Point{x=6.0, y=1.0}, Point{x=1.0, y=6.0}
+2025-04-30 13:58:05.037 [main] DEBUG com.example.triangle.validator.TriangleValidator - Validation success: Points form a valid triangle. p1=Point{x=1.0, y=1.0}, p2=Point{x=6.0, y=1.0}, p3=Point{x=1.0, y=6.0}
+2025-04-30 13:58:05.037 [main] INFO  com.example.triangle.factory.TriangleFactoryImpl - Successfully created Triangle with ID 2
+2025-04-30 13:58:05.037 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Parsing effective line part: '0 0 3 0 0 4'
+2025-04-30 13:58:05.037 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Successfully parsed coordinates: [0.0, 0.0, 3.0, 0.0, 0.0, 4.0]
+2025-04-30 13:58:05.037 [main] DEBUG com.example.triangle.factory.TriangleFactoryImpl - Attempting to create triangle from coordinate list: [0.0, 0.0, 3.0, 0.0, 0.0, 4.0]
+2025-04-30 13:58:05.037 [main] DEBUG com.example.triangle.factory.TriangleFactoryImpl - Attempting to create triangle from points: Point{x=0.0, y=0.0}, Point{x=3.0, y=0.0}, Point{x=0.0, y=4.0}
+2025-04-30 13:58:05.037 [main] DEBUG com.example.triangle.validator.TriangleValidator - Validation success: Points form a valid triangle. p1=Point{x=0.0, y=0.0}, p2=Point{x=3.0, y=0.0}, p3=Point{x=0.0, y=4.0}
+2025-04-30 13:58:05.037 [main] INFO  com.example.triangle.factory.TriangleFactoryImpl - Successfully created Triangle with ID 3
+2025-04-30 13:58:05.037 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Parsing effective line part: '1 1 2 3 4 1'
+2025-04-30 13:58:05.037 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Successfully parsed coordinates: [1.0, 1.0, 2.0, 3.0, 4.0, 1.0]
+2025-04-30 13:58:05.037 [main] DEBUG com.example.triangle.factory.TriangleFactoryImpl - Attempting to create triangle from coordinate list: [1.0, 1.0, 2.0, 3.0, 4.0, 1.0]
+2025-04-30 13:58:05.037 [main] DEBUG com.example.triangle.factory.TriangleFactoryImpl - Attempting to create triangle from points: Point{x=1.0, y=1.0}, Point{x=2.0, y=3.0}, Point{x=4.0, y=1.0}
+2025-04-30 13:58:05.037 [main] DEBUG com.example.triangle.validator.TriangleValidator - Validation success: Points form a valid triangle. p1=Point{x=1.0, y=1.0}, p2=Point{x=2.0, y=3.0}, p3=Point{x=4.0, y=1.0}
+2025-04-30 13:58:05.037 [main] INFO  com.example.triangle.factory.TriangleFactoryImpl - Successfully created Triangle with ID 4
+2025-04-30 13:58:05.037 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Parsing effective line part: '0 0 1 1 2 2'
+2025-04-30 13:58:05.037 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Successfully parsed coordinates: [0.0, 0.0, 1.0, 1.0, 2.0, 2.0]
+2025-04-30 13:58:05.037 [main] DEBUG com.example.triangle.factory.TriangleFactoryImpl - Attempting to create triangle from coordinate list: [0.0, 0.0, 1.0, 1.0, 2.0, 2.0]
+2025-04-30 13:58:05.037 [main] DEBUG com.example.triangle.factory.TriangleFactoryImpl - Attempting to create triangle from points: Point{x=0.0, y=0.0}, Point{x=1.0, y=1.0}, Point{x=2.0, y=2.0}
+2025-04-30 13:58:05.037 [main] WARN  com.example.triangle.validator.TriangleValidator - Validation failed: Points are collinear. p1=Point{x=0.0, y=0.0}, p2=Point{x=1.0, y=1.0}, p3=Point{x=2.0, y=2.0}
+2025-04-30 13:58:05.037 [main] ERROR com.example.triangle.factory.TriangleFactoryImpl - Cannot create triangle: Points are invalid (e.g., null, not distinct, or collinear). Points: Point{x=0.0, y=0.0}, Point{x=1.0, y=1.0}, Point{x=2.0, y=2.0}
+2025-04-30 13:58:05.037 [main] ERROR com.example.triangle.main.Main - Skipping line due to error: '0 0 1 1 2 2                  # Invalid - Collinear points'. Reason: Cannot create triangle: Points are invalid (e.g., null, not distinct, or collinear). Points: Point{x=0.0, y=0.0}, Point{x=1.0, y=1.0}, Point{x=2.0, y=2.0}
+2025-04-30 13:58:05.037 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Parsing effective line part: '10 10 20 20 30 30'
+2025-04-30 13:58:05.037 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Successfully parsed coordinates: [10.0, 10.0, 20.0, 20.0, 30.0, 30.0]
+2025-04-30 13:58:05.037 [main] DEBUG com.example.triangle.factory.TriangleFactoryImpl - Attempting to create triangle from coordinate list: [10.0, 10.0, 20.0, 20.0, 30.0, 30.0]
+2025-04-30 13:58:05.037 [main] DEBUG com.example.triangle.factory.TriangleFactoryImpl - Attempting to create triangle from points: Point{x=10.0, y=10.0}, Point{x=20.0, y=20.0}, Point{x=30.0, y=30.0}
+2025-04-30 13:58:05.037 [main] WARN  com.example.triangle.validator.TriangleValidator - Validation failed: Points are collinear. p1=Point{x=10.0, y=10.0}, p2=Point{x=20.0, y=20.0}, p3=Point{x=30.0, y=30.0}
+2025-04-30 13:58:05.037 [main] ERROR com.example.triangle.factory.TriangleFactoryImpl - Cannot create triangle: Points are invalid (e.g., null, not distinct, or collinear). Points: Point{x=10.0, y=10.0}, Point{x=20.0, y=20.0}, Point{x=30.0, y=30.0}
+2025-04-30 13:58:05.037 [main] ERROR com.example.triangle.main.Main - Skipping line due to error: '10 10 20 20 30 30            # Invalid - Collinear points'. Reason: Cannot create triangle: Points are invalid (e.g., null, not distinct, or collinear). Points: Point{x=10.0, y=10.0}, Point{x=20.0, y=20.0}, Point{x=30.0, y=30.0}
+2025-04-30 13:58:05.037 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Parsing effective line part: '5 5 15 5 10 13.66'
+2025-04-30 13:58:05.037 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Successfully parsed coordinates: [5.0, 5.0, 15.0, 5.0, 10.0, 13.66]
+2025-04-30 13:58:05.037 [main] DEBUG com.example.triangle.factory.TriangleFactoryImpl - Attempting to create triangle from coordinate list: [5.0, 5.0, 15.0, 5.0, 10.0, 13.66]
+2025-04-30 13:58:05.037 [main] DEBUG com.example.triangle.factory.TriangleFactoryImpl - Attempting to create triangle from points: Point{x=5.0, y=5.0}, Point{x=15.0, y=5.0}, Point{x=10.0, y=13.66}
+2025-04-30 13:58:05.037 [main] DEBUG com.example.triangle.validator.TriangleValidator - Validation success: Points form a valid triangle. p1=Point{x=5.0, y=5.0}, p2=Point{x=15.0, y=5.0}, p3=Point{x=10.0, y=13.66}
+2025-04-30 13:58:05.037 [main] INFO  com.example.triangle.factory.TriangleFactoryImpl - Successfully created Triangle with ID 5
+2025-04-30 13:58:05.037 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Parsing effective line part: '0 0 4 0 0 3'
+2025-04-30 13:58:05.037 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Successfully parsed coordinates: [0.0, 0.0, 4.0, 0.0, 0.0, 3.0]
+2025-04-30 13:58:05.037 [main] DEBUG com.example.triangle.factory.TriangleFactoryImpl - Attempting to create triangle from coordinate list: [0.0, 0.0, 4.0, 0.0, 0.0, 3.0]
+2025-04-30 13:58:05.037 [main] DEBUG com.example.triangle.factory.TriangleFactoryImpl - Attempting to create triangle from points: Point{x=0.0, y=0.0}, Point{x=4.0, y=0.0}, Point{x=0.0, y=3.0}
+2025-04-30 13:58:05.037 [main] DEBUG com.example.triangle.validator.TriangleValidator - Validation success: Points form a valid triangle. p1=Point{x=0.0, y=0.0}, p2=Point{x=4.0, y=0.0}, p3=Point{x=0.0, y=3.0}
+2025-04-30 13:58:05.037 [main] INFO  com.example.triangle.factory.TriangleFactoryImpl - Successfully created Triangle with ID 6
+2025-04-30 13:58:05.037 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Parsing effective line part: '-1 -1 1 -1 0 0.732'
+2025-04-30 13:58:05.037 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Successfully parsed coordinates: [-1.0, -1.0, 1.0, -1.0, 0.0, 0.732]
+2025-04-30 13:58:05.037 [main] DEBUG com.example.triangle.factory.TriangleFactoryImpl - Attempting to create triangle from coordinate list: [-1.0, -1.0, 1.0, -1.0, 0.0, 0.732]
+2025-04-30 13:58:05.037 [main] DEBUG com.example.triangle.factory.TriangleFactoryImpl - Attempting to create triangle from points: Point{x=-1.0, y=-1.0}, Point{x=1.0, y=-1.0}, Point{x=0.0, y=0.732}
+2025-04-30 13:58:05.037 [main] DEBUG com.example.triangle.validator.TriangleValidator - Validation success: Points form a valid triangle. p1=Point{x=-1.0, y=-1.0}, p2=Point{x=1.0, y=-1.0}, p3=Point{x=0.0, y=0.732}
+2025-04-30 13:58:05.037 [main] INFO  com.example.triangle.factory.TriangleFactoryImpl - Successfully created Triangle with ID 7
+2025-04-30 13:58:05.037 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Parsing effective line part: '-2 5 8 1 3 -6'
+2025-04-30 13:58:05.037 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Successfully parsed coordinates: [-2.0, 5.0, 8.0, 1.0, 3.0, -6.0]
+2025-04-30 13:58:05.037 [main] DEBUG com.example.triangle.factory.TriangleFactoryImpl - Attempting to create triangle from coordinate list: [-2.0, 5.0, 8.0, 1.0, 3.0, -6.0]
+2025-04-30 13:58:05.037 [main] DEBUG com.example.triangle.factory.TriangleFactoryImpl - Attempting to create triangle from points: Point{x=-2.0, y=5.0}, Point{x=8.0, y=1.0}, Point{x=3.0, y=-6.0}
+2025-04-30 13:58:05.037 [main] DEBUG com.example.triangle.validator.TriangleValidator - Validation success: Points form a valid triangle. p1=Point{x=-2.0, y=5.0}, p2=Point{x=8.0, y=1.0}, p3=Point{x=3.0, y=-6.0}
+2025-04-30 13:58:05.037 [main] INFO  com.example.triangle.factory.TriangleFactoryImpl - Successfully created Triangle with ID 8
+2025-04-30 13:58:05.037 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Parsing effective line part: 'invalid data here'
+2025-04-30 13:58:05.037 [main] ERROR com.example.triangle.parser.TriangleStringParser - Invalid number of coordinates in line part: 'invalid data here'. Expected 6, found 3. Original line: 'invalid data here            # Invalid - Non-numeric'
+2025-04-30 13:58:05.037 [main] ERROR com.example.triangle.main.Main - Skipping line due to error: 'invalid data here            # Invalid - Non-numeric'. Reason: Invalid number of coordinates in line: invalid data here            # Invalid - Non-numeric. Expected 6 after removing comments.
+2025-04-30 13:58:05.037 [main] DEBUG com.example.triangle.parser.TriangleStringParser - Parsing effective line part: '1 2 3 4 5'
+2025-04-30 13:58:05.037 [main] ERROR com.example.triangle.parser.TriangleStringParser - Invalid number of coordinates in line part: '1 2 3 4 5'. Expected 6, found 5. Original line: '1 2 3 4 5                    # Invalid - Wrong number of coordinates'
+2025-04-30 13:58:05.037 [main] ERROR com.example.triangle.main.Main - Skipping line due to error: '1 2 3 4 5                    # Invalid - Wrong number of coordinates'. Reason: Invalid number of coordinates in line: 1 2 3 4 5                    # Invalid - Wrong number of coordinates. Expected 6 after removing comments.
+2025-04-30 13:58:05.037 [main] DEBUG com.example.triangle.repository.TriangleRepository - Added Triangle ID 1 to repository.
+2025-04-30 13:58:05.053 [main] DEBUG com.example.triangle.repository.TriangleRepository - Notifying 1 observers about event ADD for Triangle ID 1
+2025-04-30 13:58:05.053 [main] INFO  com.example.triangle.warehouse.TriangleWarehouse - Warehouse received update: Type=ADD, Triangle ID=1
+2025-04-30 13:58:05.069 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 1: 10.825
+2025-04-30 13:58:05.106 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 1: 14.999779997579946
+2025-04-30 13:58:05.147 [main] DEBUG com.example.triangle.warehouse.TriangleWarehouse - Stored/Updated metrics for Triangle ID 1: Metrics[Area=10,83, Perimeter=15,00]
+2025-04-30 13:58:05.147 [main] DEBUG com.example.triangle.repository.TriangleRepository - Added Triangle ID 2 to repository.
+2025-04-30 13:58:05.147 [main] DEBUG com.example.triangle.repository.TriangleRepository - Notifying 1 observers about event ADD for Triangle ID 2
+2025-04-30 13:58:05.147 [main] INFO  com.example.triangle.warehouse.TriangleWarehouse - Warehouse received update: Type=ADD, Triangle ID=2
+2025-04-30 13:58:05.148 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 2: 12.5
+2025-04-30 13:58:05.148 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 2: 17.071067811865476
+2025-04-30 13:58:05.148 [main] DEBUG com.example.triangle.warehouse.TriangleWarehouse - Stored/Updated metrics for Triangle ID 2: Metrics[Area=12,50, Perimeter=17,07]
+2025-04-30 13:58:05.148 [main] DEBUG com.example.triangle.repository.TriangleRepository - Added Triangle ID 3 to repository.
+2025-04-30 13:58:05.148 [main] DEBUG com.example.triangle.repository.TriangleRepository - Notifying 1 observers about event ADD for Triangle ID 3
+2025-04-30 13:58:05.148 [main] INFO  com.example.triangle.warehouse.TriangleWarehouse - Warehouse received update: Type=ADD, Triangle ID=3
+2025-04-30 13:58:05.149 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 3: 6.0
+2025-04-30 13:58:05.149 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 3: 12.0
+2025-04-30 13:58:05.149 [main] DEBUG com.example.triangle.warehouse.TriangleWarehouse - Stored/Updated metrics for Triangle ID 3: Metrics[Area=6,00, Perimeter=12,00]
+2025-04-30 13:58:05.149 [main] DEBUG com.example.triangle.repository.TriangleRepository - Added Triangle ID 4 to repository.
+2025-04-30 13:58:05.149 [main] DEBUG com.example.triangle.repository.TriangleRepository - Notifying 1 observers about event ADD for Triangle ID 4
+2025-04-30 13:58:05.149 [main] INFO  com.example.triangle.warehouse.TriangleWarehouse - Warehouse received update: Type=ADD, Triangle ID=4
+2025-04-30 13:58:05.150 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 4: 3.0
+2025-04-30 13:58:05.150 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 4: 8.06449510224598
+2025-04-30 13:58:05.150 [main] DEBUG com.example.triangle.warehouse.TriangleWarehouse - Stored/Updated metrics for Triangle ID 4: Metrics[Area=3,00, Perimeter=8,06]
+2025-04-30 13:58:05.150 [main] DEBUG com.example.triangle.repository.TriangleRepository - Added Triangle ID 5 to repository.
+2025-04-30 13:58:05.150 [main] DEBUG com.example.triangle.repository.TriangleRepository - Notifying 1 observers about event ADD for Triangle ID 5
+2025-04-30 13:58:05.150 [main] INFO  com.example.triangle.warehouse.TriangleWarehouse - Warehouse received update: Type=ADD, Triangle ID=5
+2025-04-30 13:58:05.150 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 5: 43.300000000000004
+2025-04-30 13:58:05.151 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 5: 29.999559995159892
+2025-04-30 13:58:05.151 [main] DEBUG com.example.triangle.warehouse.TriangleWarehouse - Stored/Updated metrics for Triangle ID 5: Metrics[Area=43,30, Perimeter=30,00]
+2025-04-30 13:58:05.151 [main] DEBUG com.example.triangle.repository.TriangleRepository - Added Triangle ID 6 to repository.
+2025-04-30 13:58:05.151 [main] DEBUG com.example.triangle.repository.TriangleRepository - Notifying 1 observers about event ADD for Triangle ID 6
+2025-04-30 13:58:05.151 [main] INFO  com.example.triangle.warehouse.TriangleWarehouse - Warehouse received update: Type=ADD, Triangle ID=6
+2025-04-30 13:58:05.151 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 6: 6.0
+2025-04-30 13:58:05.152 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 6: 12.0
+2025-04-30 13:58:05.152 [main] DEBUG com.example.triangle.warehouse.TriangleWarehouse - Stored/Updated metrics for Triangle ID 6: Metrics[Area=6,00, Perimeter=12,00]
+2025-04-30 13:58:05.152 [main] DEBUG com.example.triangle.repository.TriangleRepository - Added Triangle ID 7 to repository.
+2025-04-30 13:58:05.152 [main] DEBUG com.example.triangle.repository.TriangleRepository - Notifying 1 observers about event ADD for Triangle ID 7
+2025-04-30 13:58:05.152 [main] INFO  com.example.triangle.warehouse.TriangleWarehouse - Warehouse received update: Type=ADD, Triangle ID=7
+2025-04-30 13:58:05.153 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 7: 1.732
+2025-04-30 13:58:05.153 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 7: 5.999911999031978
+2025-04-30 13:58:05.153 [main] DEBUG com.example.triangle.warehouse.TriangleWarehouse - Stored/Updated metrics for Triangle ID 7: Metrics[Area=1,73, Perimeter=6,00]
+2025-04-30 13:58:05.153 [main] DEBUG com.example.triangle.repository.TriangleRepository - Added Triangle ID 8 to repository.
+2025-04-30 13:58:05.153 [main] DEBUG com.example.triangle.repository.TriangleRepository - Notifying 1 observers about event ADD for Triangle ID 8
+2025-04-30 13:58:05.153 [main] INFO  com.example.triangle.warehouse.TriangleWarehouse - Warehouse received update: Type=ADD, Triangle ID=8
+2025-04-30 13:58:05.154 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 8: 45.0
+2025-04-30 13:58:05.154 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 8: 31.455700854906205
+2025-04-30 13:58:05.154 [main] DEBUG com.example.triangle.warehouse.TriangleWarehouse - Stored/Updated metrics for Triangle ID 8: Metrics[Area=45,00, Perimeter=31,46]
+2025-04-30 13:58:05.154 [main] INFO  com.example.triangle.repository.TriangleRepository - Attempted to add 8 triangles, successfully added 8.
+2025-04-30 13:58:05.154 [main] INFO  com.example.triangle.main.Main - Finished processing file. Repository size: 8. Warehouse size: 8
+2025-04-30 13:58:05.155 [main] WARN  com.example.triangle.main.Main - Skipped 4 lines due to errors.
+2025-04-30 13:58:05.174 [main] DEBUG com.example.triangle.repository.TriangleRepository - Query with specification TriangleIdSpecification found 1 results.
+2025-04-30 13:58:05.185 [main] DEBUG com.example.triangle.service.TriangleTypeService - Triangle ID 1 is ISOSCELES
+2025-04-30 13:58:05.185 [main] DEBUG com.example.triangle.service.TriangleTypeService - Triangle ID 2 is RIGHT_ANGLED
+2025-04-30 13:58:05.185 [main] DEBUG com.example.triangle.service.TriangleTypeService - Triangle ID 3 is RIGHT_ANGLED
+2025-04-30 13:58:05.185 [main] DEBUG com.example.triangle.service.TriangleTypeService - Triangle ID 4 is SCALENE
+2025-04-30 13:58:05.185 [main] DEBUG com.example.triangle.service.TriangleTypeService - Triangle ID 5 is ISOSCELES
+2025-04-30 13:58:05.186 [main] DEBUG com.example.triangle.service.TriangleTypeService - Triangle ID 6 is RIGHT_ANGLED
+2025-04-30 13:58:05.186 [main] DEBUG com.example.triangle.service.TriangleTypeService - Triangle ID 7 is ISOSCELES
+2025-04-30 13:58:05.186 [main] DEBUG com.example.triangle.service.TriangleTypeService - Triangle ID 8 is SCALENE
+2025-04-30 13:58:05.186 [main] DEBUG com.example.triangle.repository.TriangleRepository - Query with specification TriangleTypeSpecification found 3 results.
+2025-04-30 13:58:05.197 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 1: 10.825
+2025-04-30 13:58:05.197 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 2: 12.5
+2025-04-30 13:58:05.197 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 3: 6.0
+2025-04-30 13:58:05.197 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 4: 3.0
+2025-04-30 13:58:05.197 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 5: 43.300000000000004
+2025-04-30 13:58:05.198 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 6: 6.0
+2025-04-30 13:58:05.198 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 7: 1.732
+2025-04-30 13:58:05.198 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 8: 45.0
+2025-04-30 13:58:05.198 [main] DEBUG com.example.triangle.repository.TriangleRepository - Query with specification AreaRangeSpecification found 2 results.
+2025-04-30 13:58:05.210 [main] DEBUG com.example.triangle.repository.TriangleRepository - Query with specification FirstQuadrantSpecification found 6 results.
+2025-04-30 13:58:05.212 [main] DEBUG com.example.triangle.service.TriangleTypeService - Triangle ID 1 is ISOSCELES
+2025-04-30 13:58:05.212 [main] DEBUG com.example.triangle.service.TriangleTypeService - Triangle ID 1 is ISOSCELES
+2025-04-30 13:58:05.212 [main] DEBUG com.example.triangle.service.TriangleTypeService - Triangle ID 2 is RIGHT_ANGLED
+2025-04-30 13:58:05.212 [main] DEBUG com.example.triangle.service.TriangleTypeService - Triangle ID 3 is RIGHT_ANGLED
+2025-04-30 13:58:05.213 [main] DEBUG com.example.triangle.service.TriangleTypeService - Triangle ID 4 is SCALENE
+2025-04-30 13:58:05.213 [main] DEBUG com.example.triangle.service.TriangleTypeService - Triangle ID 4 is SCALENE
+2025-04-30 13:58:05.213 [main] DEBUG com.example.triangle.service.TriangleTypeService - Triangle ID 5 is ISOSCELES
+2025-04-30 13:58:05.213 [main] DEBUG com.example.triangle.service.TriangleTypeService - Triangle ID 5 is ISOSCELES
+2025-04-30 13:58:05.213 [main] DEBUG com.example.triangle.service.TriangleTypeService - Triangle ID 6 is RIGHT_ANGLED
+2025-04-30 13:58:05.213 [main] DEBUG com.example.triangle.service.TriangleTypeService - Triangle ID 7 is ISOSCELES
+2025-04-30 13:58:05.213 [main] DEBUG com.example.triangle.service.TriangleTypeService - Triangle ID 7 is ISOSCELES
+2025-04-30 13:58:05.213 [main] DEBUG com.example.triangle.service.TriangleTypeService - Triangle ID 8 is SCALENE
+2025-04-30 13:58:05.214 [main] DEBUG com.example.triangle.service.TriangleTypeService - Triangle ID 8 is SCALENE
+2025-04-30 13:58:05.214 [main] DEBUG com.example.triangle.repository.TriangleRepository - Query with specification Specification$$Lambda/0x00000275ca15f550 found 3 results.
+2025-04-30 13:58:05.220 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 2: 12.5
+2025-04-30 13:58:05.220 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 1: 10.825
+2025-04-30 13:58:05.221 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 3: 6.0
+2025-04-30 13:58:05.221 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 2: 12.5
+2025-04-30 13:58:05.221 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 3: 6.0
+2025-04-30 13:58:05.221 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 2: 12.5
+2025-04-30 13:58:05.221 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 3: 6.0
+2025-04-30 13:58:05.221 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 1: 10.825
+2025-04-30 13:58:05.221 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 4: 3.0
+2025-04-30 13:58:05.221 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 1: 10.825
+2025-04-30 13:58:05.221 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 4: 3.0
+2025-04-30 13:58:05.222 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 3: 6.0
+2025-04-30 13:58:05.222 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 5: 43.300000000000004
+2025-04-30 13:58:05.222 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 1: 10.825
+2025-04-30 13:58:05.222 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 5: 43.300000000000004
+2025-04-30 13:58:05.222 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 2: 12.5
+2025-04-30 13:58:05.222 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 6: 6.0
+2025-04-30 13:58:05.222 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 1: 10.825
+2025-04-30 13:58:05.222 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 6: 6.0
+2025-04-30 13:58:05.222 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 3: 6.0
+2025-04-30 13:58:05.223 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 7: 1.732
+2025-04-30 13:58:05.223 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 1: 10.825
+2025-04-30 13:58:05.223 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 7: 1.732
+2025-04-30 13:58:05.224 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 3: 6.0
+2025-04-30 13:58:05.224 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 7: 1.732
+2025-04-30 13:58:05.224 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 4: 3.0
+2025-04-30 13:58:05.225 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 8: 45.0
+2025-04-30 13:58:05.225 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 6: 6.0
+2025-04-30 13:58:05.225 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 8: 45.0
+2025-04-30 13:58:05.225 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 2: 12.5
+2025-04-30 13:58:05.225 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 8: 45.0
+2025-04-30 13:58:05.226 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated area for Triangle ID 5: 43.300000000000004
+2025-04-30 13:58:05.233 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 2: 17.071067811865476
+2025-04-30 13:58:05.233 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 1: 14.999779997579946
+2025-04-30 13:58:05.234 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 3: 12.0
+2025-04-30 13:58:05.234 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 2: 17.071067811865476
+2025-04-30 13:58:05.234 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 3: 12.0
+2025-04-30 13:58:05.234 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 2: 17.071067811865476
+2025-04-30 13:58:05.234 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 3: 12.0
+2025-04-30 13:58:05.234 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 1: 14.999779997579946
+2025-04-30 13:58:05.234 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 4: 8.06449510224598
+2025-04-30 13:58:05.234 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 1: 14.999779997579946
+2025-04-30 13:58:05.234 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 4: 8.06449510224598
+2025-04-30 13:58:05.235 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 3: 12.0
+2025-04-30 13:58:05.235 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 5: 29.999559995159892
+2025-04-30 13:58:05.235 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 1: 14.999779997579946
+2025-04-30 13:58:05.235 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 5: 29.999559995159892
+2025-04-30 13:58:05.235 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 2: 17.071067811865476
+2025-04-30 13:58:05.235 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 6: 12.0
+2025-04-30 13:58:05.235 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 1: 14.999779997579946
+2025-04-30 13:58:05.236 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 6: 12.0
+2025-04-30 13:58:05.236 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 3: 12.0
+2025-04-30 13:58:05.236 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 7: 5.999911999031978
+2025-04-30 13:58:05.236 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 1: 14.999779997579946
+2025-04-30 13:58:05.236 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 7: 5.999911999031978
+2025-04-30 13:58:05.236 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 3: 12.0
+2025-04-30 13:58:05.236 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 7: 5.999911999031978
+2025-04-30 13:58:05.236 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 4: 8.06449510224598
+2025-04-30 13:58:05.237 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 8: 31.455700854906205
+2025-04-30 13:58:05.237 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 6: 12.0
+2025-04-30 13:58:05.237 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 8: 31.455700854906205
+2025-04-30 13:58:05.237 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 2: 17.071067811865476
+2025-04-30 13:58:05.237 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 8: 31.455700854906205
+2025-04-30 13:58:05.237 [main] DEBUG com.example.triangle.service.TriangleCalculationService - Calculated perimeter for Triangle ID 5: 29.999559995159892
+2025-04-30 13:58:05.243 [main] DEBUG com.example.triangle.service.TriangleTypeService - Triangle ID 2 is RIGHT_ANGLED
+2025-04-30 13:58:05.244 [main] DEBUG com.example.triangle.service.TriangleTypeService - Triangle ID 1 is ISOSCELES
+2025-04-30 13:58:05.244 [main] DEBUG com.example.triangle.service.TriangleTypeService - Triangle ID 3 is RIGHT_ANGLED
+2025-04-30 13:58:05.244 [main] DEBUG com.example.triangle.service.TriangleTypeService - Triangle ID 2 is RIGHT_ANGLED
+2025-04-30 13:58:05.244 [main] DEBUG com.example.triangle.service.TriangleTypeService - Triangle ID 4 is SCALENE
+2025-04-30 13:58:05.245 [main] DEBUG com.example.triangle.service.TriangleTypeService - Triangle ID 3 is RIGHT_ANGLED
+2025-04-30 13:58:05.245 [main] DEBUG com.example.triangle.service.TriangleTypeService - Triangle ID 5 is ISOSCELES
+2025-04-30 13:58:05.245 [main] DEBUG com.example.triangle.service.TriangleTypeService - Triangle ID 4 is SCALENE
+2025-04-30 13:58:05.245 [main] DEBUG com.example.triangle.service.TriangleTypeService - Triangle ID 5 is ISOSCELES
+2025-04-30 13:58:05.245 [main] DEBUG com.example.triangle.service.TriangleTypeService - Triangle ID 3 is RIGHT_ANGLED
+2025-04-30 13:58:05.245 [main] DEBUG com.example.triangle.service.TriangleTypeService - Triangle ID 5 is ISOSCELES
+2025-04-30 13:58:05.245 [main] DEBUG com.example.triangle.service.TriangleTypeService - Triangle ID 2 is RIGHT_ANGLED
+2025-04-30 13:58:05.245 [main] DEBUG com.example.triangle.service.TriangleTypeService - Triangle ID 5 is ISOSCELES
+2025-04-30 13:58:05.245 [main] DEBUG com.example.triangle.service.TriangleTypeService - Triangle ID 1 is ISOSCELES
+2025-04-30 13:58:05.245 [main] DEBUG com.example.triangle.service.TriangleTypeService - Triangle ID 6 is RIGHT_ANGLED
+2025-04-30 13:58:05.246 [main] DEBUG com.example.triangle.service.TriangleTypeService - Triangle ID 2 is RIGHT_ANGLED
+2025-04-30 13:58:05.246 [main] DEBUG com.example.triangle.service.TriangleTypeService - Triangle ID 6 is RIGHT_ANGLED
+2025-04-30 13:58:05.246 [main] DEBUG com.example.triangle.service.TriangleTypeService - Triangle ID 4 is SCALENE
+2025-04-30 13:58:05.246 [main] DEBUG com.example.triangle.service.TriangleTypeService - Triangle ID 6 is RIGHT_ANGLED
+2025-04-30 13:58:05.246 [main] DEBUG com.example.triangle.service.TriangleTypeService - Triangle ID 3 is RIGHT_ANGLED
+2025-04-30 13:58:05.246 [main] DEBUG com.example.triangle.service.TriangleTypeService - Triangle ID 7 is ISOSCELES
+2025-04-30 13:58:05.246 [main] DEBUG com.example.triangle.service.TriangleTypeService - Triangle ID 3 is RIGHT_ANGLED
+2025-04-30 13:58:05.246 [main] DEBUG com.example.triangle.service.TriangleTypeService - Triangle ID 7 is ISOSCELES
+2025-04-30 13:58:05.246 [main] DEBUG com.example.triangle.service.TriangleTypeService - Triangle ID 5 is ISOSCELES
+2025-04-30 13:58:05.246 [main] DEBUG com.example.triangle.service.TriangleTypeService - Triangle ID 7 is ISOSCELES
+2025-04-30 13:58:05.246 [main] DEBUG com.example.triangle.service.TriangleTypeService - Triangle ID 2 is RIGHT_ANGLED
+2025-04-30 13:58:05.247 [main] DEBUG com.example.triangle.service.TriangleTypeService - Triangle ID 8 is SCALENE
+2025-04-30 13:58:05.247 [main] DEBUG com.example.triangle.service.TriangleTypeService - Triangle ID 2 is RIGHT_ANGLED
+2025-04-30 13:58:05.247 [main] DEBUG com.example.triangle.service.TriangleTypeService - Triangle ID 8 is SCALENE
+2025-04-30 13:58:05.251 [main] DEBUG com.example.triangle.service.TriangleTypeService - Triangle ID 6 is RIGHT_ANGLED
+2025-04-30 13:58:05.251 [main] DEBUG com.example.triangle.service.TriangleTypeService - Triangle ID 8 is SCALENE
+2025-04-30 13:58:05.251 [main] DEBUG com.example.triangle.service.TriangleTypeService - Triangle ID 4 is SCALENE
+2025-04-30 13:58:05.252 [main] DEBUG com.example.triangle.service.TriangleTypeService - Triangle ID 1 is ISOSCELES
+2025-04-30 13:58:05.252 [main] DEBUG com.example.triangle.service.TriangleTypeService - Triangle ID 5 is ISOSCELES
+2025-04-30 13:58:05.252 [main] DEBUG com.example.triangle.service.TriangleTypeService - Triangle ID 7 is ISOSCELES
+2025-04-30 13:58:05.253 [main] DEBUG com.example.triangle.service.TriangleTypeService - Triangle ID 2 is RIGHT_ANGLED
+2025-04-30 13:58:05.253 [main] DEBUG com.example.triangle.service.TriangleTypeService - Triangle ID 3 is RIGHT_ANGLED
+2025-04-30 13:58:05.253 [main] DEBUG com.example.triangle.service.TriangleTypeService - Triangle ID 6 is RIGHT_ANGLED
+2025-04-30 13:58:05.254 [main] DEBUG com.example.triangle.service.TriangleTypeService - Triangle ID 4 is SCALENE
+2025-04-30 13:58:05.254 [main] DEBUG com.example.triangle.service.TriangleTypeService - Triangle ID 8 is SCALENE
+2025-04-30 13:58:05.254 [main] DEBUG com.example.triangle.repository.TriangleRepository - Observer TriangleWarehouse detached.
+2025-04-30 13:58:05.255 [main] INFO  com.example.triangle.main.Main - Warehouse detached from Repository.
+2025-04-30 13:58:05.255 [main] INFO  com.example.triangle.main.Main - Triangle application finished.
